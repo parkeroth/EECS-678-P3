@@ -832,29 +832,8 @@ int AddrSpace::TooManyFrames () {
 //          It uses the First-In First-Out algorithm
 // -----------------------------------------------------------------------
 int AddrSpace::FIFO_Choose_Victim (int notMe) {
-  int victim;                   //FIFO's chosen victim thread
-  unsigned int pageTime = 0xFFFFFFFF;
-  for(int i=0; i<getNumPages();i++)
-    {
-      if(pageTable[i].valid == true)
-	{
-	  if((i == 0) && (pageTable[i].physicalPage != (unsigned int)notMe))
-	    {
-	      pageTime = pageTable[i].getTime();
-	      victim = pageTable[i].physicalPage;
-	    }
-	  if( i > 0 )
-	    {
-	      if( (pageTable[i].getTime() < pageTime) &&
-		  (pageTable[i].physicalPage != (unsigned int)notMe))
-		{
-		  victim = pageTable[i].physicalPage;
-		  pageTime = pageTable[i].getTime();
-		} 
-	    }
-	}
-    } 
-  return victim;
+    
+    return 0;
 }
 
 
