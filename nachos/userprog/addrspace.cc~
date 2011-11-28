@@ -834,21 +834,23 @@ int AddrSpace::TooManyFrames () {
 int AddrSpace::FIFO_Choose_Victim (int notMe) {
   // all 678
   int victim;                           //FIFO's chosen victim page
-  unsigned int pageTime = 0xFFFFFFFF;   //set this to some temporary (max)
+  unsigned int victimTime = 0xFFFFFFFF; //set this to some temporary (max)
                                         //value so the first page test passes
   for(int i=0; i<getNumPages();i++)
     {
-      // Check to make sure the current page is a valid one
-      // otherwise it doesn't matter here
-      if(pageTable[i].valid == true)
+    // Check to make sure the current page is a valid one
+    // and also not the page we said it could not be
+    // otherwise it doesn't matter here
+    if(pageTable[i].valid == true && 
+	    (pageTable[i].physicalPage != (unsigned int) notMe))
 	    {
             //for first page we check
-	        if((i == 0) && ((int)pageTable[i].physicalPage != notMe))
+	        if(i == 0)
 	        {
                 //basicially automatically assign the current page to be
                 //victim page, which if more pages exist may chage later
-	            pageTime = pageTable[i].getTime();
 	            victim = pageTable[i].physicalPage;
+	            victimTime = pageTable[i].getTime();
 	        }
             //for any additional pages
 	        if( i > 0 )
@@ -856,11 +858,10 @@ int AddrSpace::FIFO_Choose_Victim (int notMe) {
                 //if this page was accessed at a time less then current
                 //victim, then this page is before it in the fifo queue
                 //and it becomes the victim to check against
-	            if((pageTable[i].getTime() < pageTime) &&
-		            ((int)pageTable[i].physicalPage != notMe))
+	            if(pageTable[i].getTime() < victimTime)
 		        {
-		            pageTime = pageTable[i].getTime();
 		            victim = pageTable[i].physicalPage;
+		            victimTime = pageTable[i].getTime();
 		        } 
 	        }
 	    }
@@ -878,40 +879,45 @@ int AddrSpace::FIFO_Choose_Victim (int notMe) {
 //          It uses the Least-Recently-Used algorithm
 // -----------------------------------------------------------------------
 int AddrSpace::LRU_Choose_Victim (int notMe) {
-  unsigned char tmpHistory = 0xFF;
-  unsigned int chosen;
-  unsigned int tmpTime = 0xFFFFFFFF;
+  unsigned int victim;                  //LRU's chosen victim page
+  unsigned char victimHist = 0xFF;      //current victim's history info
+  unsigned int victimTime = 0xFFFFFFFF; //current victim's time info
   
+  //Loop over each page
   for(unsigned int i=0; i<getNumPages();i++)
+  {
+    // again, make sure the ith page is valid and not the
+    // page it cannot be
+    if(pageTable[i].valid == true && 
+	    (pageTable[i].physicalPage != (unsigned int) notMe))
     {
-      if(pageTable[i].valid == true && 
-	 (pageTable[i].physicalPage != (unsigned int) notMe))
-	{
-	 
-	  /*If the history of the current page is the same as the chosen*/
-	  if( pageTable[i].history == tmpHistory )
+	    // SPECIAL CASE testing
+        // victims may have the same history records
+        if( pageTable[i].history == victimHist )
 	    {
-	      /*Use the timestamp to determine the chosen*/
-	      if( tmpTime > pageTable[i].getTime() )
-		{
-		  chosen = pageTable[i].physicalPage;
-		  tmpTime = pageTable[i].getTime();
-                  tmpHistory = pageTable[i].history;
-		}
+	        // if this is the case, use the access time of the pages
+            // for victim selection
+            if( victimTime > pageTable[i].getTime() )
+		    {
+		        victim = pageTable[i].physicalPage;
+		        victimTime = pageTable[i].getTime();
+                victimHist = pageTable[i].history;
+		    }
 	    }
-	  /*Check if the page should be chosen as the victim*/
-	  else if ( pageTable[i].history < tmpHistory )
+
+        // assuming they don't have the same history records
+        // then just use the page history data itself
+	    else if ( pageTable[i].history < victimHist )
 	    {
-	      chosen = pageTable[i].physicalPage;
-	      tmpTime = pageTable[i].getTime();
-              tmpHistory = pageTable[i].history;
+	        victim = pageTable[i].physicalPage;
+	        victimTime = pageTable[i].getTime();
+            victimHist = pageTable[i].history;
 	    }
 	  
-	}
     }
-  return chosen;
+  }
+  return victim;
 }
-
 
 // -----------------------------------------------------------------------
 // SC_Choose_Victim
@@ -923,7 +929,52 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
 //          It uses the Enhanced Second Chance algorithm
 // -----------------------------------------------------------------------
 int AddrSpace::SC_Choose_Victim (int notMe) {
-  // You need to return an appropriate value here.
-  return 0;
+  //unsigned int returned_chosen, chosen1, chosen2, t1=0xFFFFFFFF, t2=0xFFFFFFFF;
+  //bool c1=0, c2=0;
+  unsigned int victim;                  //SC's chosen victim page
+  unsigned int victimTime=OxFFFFFFFF;   //current victim's time info
+    for(unsigned int i=0; i<getNumPages();i++)
+    {
+      if( pageTable[i].valid == true && 
+	  (pageTable[i].physicalPage != (unsigned int)notMe) )
+	{
+	  if(pageTable[i].use == false && pageTable[i].dirty == false)
+	    {
+	      if(c1 == 0)
+		c1 = 1;		  
+	      if(pageTable[i].getTime() < t1)
+		{
+		  chosen1 = pageTable[i].physicalPage;
+		  t1 = pageTable[i].getTime();
+		}
+	    }
+	  if(pageTable[i].use == false && pageTable[i].dirty == true)
+	    {
+	      if(c2 == 0)
+		c2 = 1;
+	      if(pageTable[i].getTime() < t2)
+		{
+		  chosen2 = pageTable[i].physicalPage;
+		  t2 = pageTable[i].getTime();
+		}
+	    }
+	  if(pageTable[i].use == true && pageTable[i].dirty == false)
+	    pageTable[i].clearSC();	      
+	  if(pageTable[i].use == 1 && pageTable[i].dirty == 1)
+	    pageTable[i].clearSC();      
+	  
+	}
+    }
+  
+  if(c2 == 1)
+    {
+      returned_chosen = chosen2;
+    }
+  if(c1 == 1)
+    {
+      returned_chosen = chosen1;
+    }
+  
+  return returned_chosen;
 }
 

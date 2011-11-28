@@ -841,11 +841,11 @@ int AddrSpace::FIFO_Choose_Victim (int notMe) {
     // Check to make sure the current page is a valid one
     // and also not the page we said it could not be
     // otherwise it doesn't matter here
-    if(pageTable[i].valid == true && 
+    if(pageTable[i].valid && 
 	    (pageTable[i].physicalPage != (unsigned int) notMe))
 	    {
             //for first page we check
-	        if(i == 0)
+	        if(!i)
 	        {
                 //basicially automatically assign the current page to be
                 //victim page, which if more pages exist may chage later
@@ -888,7 +888,7 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
   {
     // again, make sure the ith page is valid and not the
     // page it cannot be
-    if(pageTable[i].valid == true && 
+    if(pageTable[i].valid && 
 	    (pageTable[i].physicalPage != (unsigned int) notMe))
     {
 	    // SPECIAL CASE testing
@@ -929,7 +929,27 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
 //          It uses the Enhanced Second Chance algorithm
 // -----------------------------------------------------------------------
 int AddrSpace::SC_Choose_Victim (int notMe) {
-  // You need to return an appropriate value here.
-  return 0;
+  unsigned int victim;                          //SC's chosen victim page
+  unsigned int victimTime = OxFFFFFFFF;    //current victim's time info
+  bool hitNonDirtyPage = 0;
+    for(unsigned int i=0; i<getNumPages();i++)
+    {
+      if( pageTable[i].valid && 
+	    (pageTable[i].physicalPage != (unsigned int)notMe) )
+	    {
+            //Page was recently used
+            if(pageTable[i].use)
+            {
+                pageTable[i].clearSC();
+            } else {
+                if(pageTable[i].dirty)
+                {
+                    
+                }
+            }
+	    }
+    }
+  
+  return returned_chosen;
 }
 
