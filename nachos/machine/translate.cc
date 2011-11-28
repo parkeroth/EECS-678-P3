@@ -245,7 +245,6 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
     }
     entry->use = true;		// set the use, dirty bits
     
-    entry->history >> 1;    // 678 shift history values left by one
     entry->history |= 0x80; // 678 set MSB to 1
 
     if (writing)
