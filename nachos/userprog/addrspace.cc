@@ -1043,7 +1043,7 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
                 victimTime = pageTable[i].getTime();
             }
             //CASE 4 [1,1]: recently used, recently modified, bigger time
-            if( pageTable[i].used && pageTable[i].dirty
+            else if( pageTable[i].used && pageTable[i].dirty
                     && (victimTime > pageTable[i].getTime()) )
             {
                 victim = pageTable[i].physicalPage;
