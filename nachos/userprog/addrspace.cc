@@ -1035,6 +1035,7 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
       if( pageTable[i].valid && 
 	        (pageTable[i].physicalPage != (unsigned int)notMe) )
 	    {
+            //valid page, now check our reference bits
             //CASE 3 [1,0]: recently used, not modified, bigger time
             if( pageTable[i].used && !pageTable[i].dirty
                     && (victimTime > pageTable[i].getTime()) )
