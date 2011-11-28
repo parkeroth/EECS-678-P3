@@ -1,0 +1,2656 @@
+
+test/nice_console.c,191
+#define OUTPUT_LOOP_LIMIT OUTPUT_LOOP_LIMIT13,362
+#define A_NICE A_NICE21,579
+#define B_NICE B_NICE22,596
+#define C_NICE C_NICE23,613
+#define D_NICE D_NICE24,631
+main()main27,654
+
+test/makePDFs.py,84
+import syssys1,0
+import osos2,11
+d = {}d5,76
+def main( prefix ):main41,1037
+
+test/fork.c,23
+int main( ) {main1,0
+
+test/rot_free.c,71
+#define OUTPUT_LOOP_LIMIT OUTPUT_LOOP_LIMIT15,402
+main()main24,623
+
+test/fork-yield.c,23
+int main( ) {main1,0
+
+test/shell.c,28
+int main (void) {main7,81
+
+test/histos2gnuplot.py,369
+terminalType = 'pdf'terminalType21,599
+def parseArgs():parseArgs23,621
+    import syssys24,638
+    import stringstring25,653
+def gpHeader( fname , title ):gpHeader44,997
+def gpPlots( hs , ipp , coln ):gpPlots59,1296
+    import stringstring60,1328
+    def getCol( coln , line ):getCol62,1347
+    import osos133,3701
+    import fnmatchfnmatch134,3715
+
+test/nice.c,191
+#define OUTPUT_LOOP_LIMIT OUTPUT_LOOP_LIMIT10,256
+#define A_NICE A_NICE18,473
+#define B_NICE B_NICE19,490
+#define C_NICE C_NICE20,507
+#define D_NICE D_NICE21,525
+main()main24,548
+
+test/exit-prog.c,19
+main()main16,496
+
+test/nice_free.c,191
+#define OUTPUT_LOOP_LIMIT OUTPUT_LOOP_LIMIT13,369
+#define A_NICE A_NICE21,586
+#define B_NICE B_NICE22,603
+#define C_NICE C_NICE23,620
+#define D_NICE D_NICE24,638
+main()main27,661
+
+test/LogUserEvent.c,21
+int main()main5,24
+
+test/access1.c,111
+#define RowDim RowDim15,250
+#define ColDim ColDim16,270
+int A[RowDim][ColDim];A24,445
+main()main27,473
+
+test/run-nachos-tests.py,1527
+import syssys8,170
+import subprocesssubprocess9,181
+import stringstring10,199
+import rere11,213
+prps = ['dumb','fifo','lru','secondchance']	# which page replacement policies to runprps16,247
+deltas = [1,2,4,8]			# sizes of the reference history windowdeltas17,332
+programs = [ 'access1', 'access2', 'matmult', 'access3', 'access4' ]	# which apps to runprograms18,393
+hspecs = { 'access1' : '76,10,0;20,10,0'hspecs21,557
+def checkDependencies():checkDependencies33,874
+    class ReqNotFound(Exception):ReqNotFound34,899
+        def __init__(self,missing):__init__35,933
+        def __str__(self):__str__37,1025
+        found = Falsefound54,1482
+def genProcess( option_set ):genProcess69,1967
+def writeTable( table , result_type , extraction_re ):writeTable103,2976
+option_sets = [ { 'prp' : prpoption_sets149,4358
+processes = [ genProcess( option_set )processes160,4669
+aggregate_stdout = file( 'results' , 'w' )aggregate_stdout166,4846
+paging_re = re.compile( r"Paging:" )paging_re169,4945
+ticks_re = re.compile( r"Ticks:" )ticks_re170,4982
+table = {}table173,5039
+    retcode = process.wait();retcode188,5477
+        result_type = Noneresult_type199,5830
+            result_type = 'paging'result_type201,5893
+            result_type = 'ticks'result_type203,5965
+extract_paging_re = re.compile( r"faults (\d+), pageins \d+, pageouts (\d+)" )extract_paging_re207,6090
+extract_ticks_re = re.compile( r"total \d+, idle \d+, system (\d+), user (\d+)" )extract_ticks_re208,6169
+
+test/matmult.c,152
+#define Dim Dim13,294
+int A[Dim][Dim];A17,384
+int B[Dim][Dim];B18,401
+int C[Dim][Dim];C19,418
+char buffer[60];buffer21,436
+main()main24,458
+
+test/access2.c,111
+#define RowDim RowDim15,250
+#define ColDim ColDim16,270
+int A[RowDim][ColDim];A24,445
+main()main27,473
+
+test/access3.c,111
+#define RowDim RowDim15,250
+#define ColDim ColDim16,268
+int A[RowDim][ColDim];A24,443
+main()main27,471
+
+test/access4.c,143
+#define NPasses NPasses15,250
+#define RowDim RowDim17,270
+#define ColDim ColDim18,288
+int A[RowDim][ColDim];A26,463
+main()main29,491
+
+test/basic_sem_free.c,393
+#define OUTER_LOOP_LIMIT OUTER_LOOP_LIMIT11,246
+#define INNER_LOOP_LIMIT INNER_LOOP_LIMIT12,274
+#define SEM_ONE SEM_ONE14,303
+#define SEM_TWO SEM_TWO15,329
+#define SEM_THREE SEM_THREE16,355
+#define SEM_FOUR SEM_FOUR17,381
+void process_A()process_A19,408
+void process_B()process_B45,920
+void process_C()process_C71,1432
+void process_D()process_D97,1944
+main()main124,2460
+
+test/sort.c,113
+#define ARRAYSIZE ARRAYSIZE13,337
+int A[ARRAYSIZE];A15,361
+char buffer[80];buffer16,379
+main()main19,401
+
+test/halt.c,19
+main()main16,496
+
+test/count.c,245
+#define OUTPUT_LOOP_LIMIT OUTPUT_LOOP_LIMIT12,271
+#define COMPUTE_LOOP_LIMIT COMPUTE_LOOP_LIMIT13,302
+#define A_NICE A_NICE21,520
+#define B_NICE B_NICE22,537
+#define C_NICE C_NICE23,554
+#define D_NICE D_NICE24,572
+main()main27,595
+
+test/phys.h,33
+#define PageSize PageSize9,273
+
+test/queue_sem_free.c,393
+#define OUTER_LOOP_LIMIT OUTER_LOOP_LIMIT11,246
+#define INNER_LOOP_LIMIT INNER_LOOP_LIMIT12,274
+#define SEM_ONE SEM_ONE14,303
+#define SEM_TWO SEM_TWO15,328
+#define SEM_THREE SEM_THREE16,353
+#define SEM_FOUR SEM_FOUR17,378
+void process_A()process_A19,404
+void process_B()process_B45,916
+void process_C()process_C71,1428
+void process_D()process_D97,1940
+main()main124,2456
+
+test/doDPMetricsRun.sh,0
+
+test/Makefile,590
+PROGRAMS = halt shell matmult matmult2 matmult4 matmult8 sort exit-prog fork fork-yield count nice_console access1 access2 access3 access4PROGRAMS13,430
+GCCDIR = /usr/local/nachos/bin/GCCDIR20,847
+LDFLAGS = -T scriptLDFLAGS21,879
+ASFLAGS = # -mipsASFLAGS22,899
+CPPFLAGS = $(INCDIR)CPPFLAGS23,917
+CC = $(GCCDIR)mipsel-elf-gccCC31,1042
+AS = $(GCCDIR)mipsel-elf-asAS32,1071
+LD = $(GCCDIR)mipsel-elf-ldLD33,1099
+CPP = /lib/cppCPP35,1128
+INCDIR =-I../userprog -I../threads -I../libINCDIR36,1143
+CFLAGS = -fno-builtin -g -c $(INCDIR)CFLAGS37,1187
+ASFLAGS = ASFLAGS38,1225
+
+vm/Makefile,358
+DEFINES = -DUSER_PROGRAM  -DFILESYS_NEEDED -DFILESYS_STUB -DVM -DUSE_TLBDEFINES15,592
+INCPATH = -I../filesys -I../bin -I../vm -I../userprog -I../threads -I../machineINCPATH16,665
+HFILES = $(THREAD_H) $(USERPROG_H) $(VM_H)HFILES17,745
+CFILES = $(THREAD_C) $(USERPROG_C) $(VM_C)CFILES18,788
+C_OFILES = $(THREAD_O) $(USERPROG_O) $(VM_O)C_OFILES19,831
+
+dsui-vm/page_replacement_policy/prp_table.py,831
+import stringstring1,0
+import subprocesssubprocess2,14
+prps = ['dumb','fifo','lru','secondchance']	# which page replacement policies to runprps7,56
+deltas = [1,2,4,8]			# sizes of the reference history windowdeltas8,141
+programs = [ 'access1', 'access2', 'access3', 'access4' ]	# which apps to runprograms10,292
+option_sets = [ { 'prp' : prpoption_sets13,394
+table = {}table24,706
+	stat_file = open("data/%s.stats" % option_set['tag'], "r")stat_file39,1070
+	conf = stat_file.readline().split()conf40,1130
+	stat = stat_file.readline().split()stat41,1167
+min_prp_width = 15min_prp_width49,1461
+min_results_width = 15min_results_width50,1480
+num_deltas = len( deltas )num_deltas51,1503
+		t = table[program][prp]t63,1836
+			result = "%s/%s" % (t[delta]['page_faults'], t[delta]['page_outs'])result66,1939
+
+dsui-vm/page_replacement_policy/prpfilters.py,592
+import syssys6,34
+import osos7,45
+import structstruct8,55
+import stringstring9,69
+import pprintpprint10,83
+from datastreams.postprocess import filtering, entitiesfiltering12,98
+from datastreams.postprocess import filtering, entitiesentities12,98
+class prp(filtering.Filter):prp14,155
+    def initialize(self):initialize19,262
+    def process(self, entity):process60,1852
+	extra_data = entity.get_extra_data()extra_data75,2232
+	tag = entity.get_tag()tag76,2270
+    def finalize(self):finalize107,3085
+    def get_string(self, extra_data, length):get_string175,5283
+
+dsui-vm/page_replacement_policy/prp_histos,0
+
+dsui-vm/page_replacement_policy/prp_tests.py,928
+import syssys1,0
+import stringstring2,11
+import subprocesssubprocess3,25
+from os.path import abspath, joinabspath4,43
+from os.path import abspath, joinjoin4,43
+bin_output_dir = abspath("bins/")bin_output_dir43,524
+conf_output_dir = abspath("configs/")conf_output_dir44,558
+swap_dir = abspath("swaps/")swap_dir45,596
+prps = ['dumb','fifo','lru','secondchance'] # which page replacement policies to runprps50,649
+deltas = [1,2,4,8]          # sizes of the reference history windowdeltas51,734
+programs = [ 'access1', 'access2', 'access3', 'access4' ]    # which apps to runprograms53,895
+option_sets = [ { 'prp' : prpoption_sets56,1000
+def genProcess( option_set ):genProcess66,1297
+def genDSUIConfs():genDSUIConfs93,2249
+aggregate_stdout = file( 'results' , 'w' )aggregate_stdout123,3420
+    processes = [ genProcess(option_set)processes126,3504
+        retcode = process.wait();retcode135,3770
+
+dsui-vm/page_replacement_policy/Makefile,0
+
+dsui-vm/create_nachos_histograms.py,771
+import cPicklecPickle19,442
+import matplotlib.pyplot as pltmatplotlib20,457
+import matplotlib.pyplot as pltplt20,457
+from string import uppercaseuppercase21,489
+SKIP_ADMIN_THREAD_ONE = TrueSKIP_ADMIN_THREAD_ONE29,878
+def create_histograms_from_pickled_file(filepath, outfile, title):create_histograms_from_pickled_file33,910
+    import optparse, sys, osoptparse107,3842
+    import optparse, sys, ossys107,3842
+    import optparse, sys, osos107,3842
+    class Params_Set:Params_Set118,4338
+        USAGE = "usage: %prog [options]"USAGE119,4360
+        def __init__(self):__init__121,4406
+        def parse(self):parse165,6745
+        def __str__(self):__str__182,7521
+    def main():main201,8007
+    Params = Params_Set()    Params232,9186
+
+dsui-vm/histos2gnuplot.py,376
+terminalType = 'postscript'terminalType21,599
+def parseArgs():parseArgs23,628
+    import syssys24,645
+    import stringstring25,660
+def gpHeader( fname , title ):gpHeader44,987
+def gpPlots( hs , ipp , coln ):gpPlots59,1311
+    import stringstring60,1343
+    def getCol( coln , line ):getCol62,1362
+    import osos133,3716
+    import fnmatchfnmatch134,3730
+
+dsui-vm/nachosfilters.py,928
+from datastreams.postprocess import filtering, entitiesfiltering8,236
+from datastreams.postprocess import filtering, entitiesentities8,236
+from datastreams.postprocess.filters.input_output import picklepickle9,292
+from datastreams.postprocess.entities import TimeMeasurementTimeMeasurement10,356
+import cPicklecPickle11,417
+import pprintpprint12,432
+class NachosTime(TimeMeasurement):NachosTime14,447
+    def __init__(self, value):__init__23,784
+class CalculateThreadIntervalsFilter(filtering.Filter):CalculateThreadIntervalsFilter28,953
+    def initialize(self):initialize39,1341
+    def process(self, entity):process76,3121
+class ThreadStateIntervalFilter(filtering.Filter):ThreadStateIntervalFilter164,6979
+    expected_parameters = {expected_parameters177,7544
+    def initialize(self):initialize190,8182
+    def process(self, entity):process217,9275
+    def finalize(self):finalize276,11905
+
+dsui-vm/Makefile,199
+DSUI_HEADER = dsui-headerDSUI_HEADER1,0
+IS_LOCAL_INSTALL = noIS_LOCAL_INSTALL3,27
+KUSP_INCLUDE_FLAGS = KUSP_INCLUDE_FLAGS5,50
+	KUSP_INCLUDE_FLAGS = -I/opt/kusp/includeKUSP_INCLUDE_FLAGS8,105
+
+dsui_tmp/prp/prp_table.py,840
+import stringstring1,0
+import subprocesssubprocess2,14
+prps = ['dumb','fifo','lru','secondchance']	# which page replacement policies to runprps7,56
+deltas = [1,2,4,8]			# sizes of the reference history windowdeltas8,141
+programs = [ 'access1', 'access2', 'matmult', 'access3', 'access4' ]	# which apps to runprograms9,202
+option_sets = [ { 'prp' : prpoption_sets12,315
+table = {}table23,627
+	stat_file = open("data/%s.stats" % option_set['tag'], "r")stat_file38,991
+	conf = stat_file.readline().split()conf39,1051
+	stat = stat_file.readline().split()stat40,1088
+min_prp_width = 15min_prp_width48,1382
+min_results_width = 15min_results_width49,1401
+num_deltas = len( deltas )num_deltas50,1424
+		t = table[program][prp]t62,1757
+			result = "%s/%s" % (t[delta]['page_faults'], t[delta]['page_outs'])result65,1860
+
+dsui_tmp/prp/prp_filters.py,782
+import syssys1,0
+import osos2,11
+import structstruct3,21
+import stringstring4,35
+import pprintpprint5,49
+from datastreams.postprocess.filters import filter_frameworkfilter_framework9,136
+from datastreams.postprocess.format.constants import constconst10,197
+from datastreams.postprocess.io import input_streaminput_stream11,256
+from datastreams.postprocess.format import extra_data_routinesextra_data_routines12,308
+from pykusp.namespaces import read_namespace_listread_namespace_list13,371
+class prp_filter(filter_framework.abstract_filter):prp_filter15,422
+	def __init__(self, parameters, _input=None, _output=None):__init__16,474
+	def close(self):close27,770
+	def get_string(self, ed, len):get_string90,2352
+	def process(self, entity):process94,2469
+
+dsui_tmp/prp/prpfilters.py,474
+import syssys1,0
+import osos2,11
+import structstruct3,21
+import stringstring4,35
+import pprintpprint5,49
+from datastreams.postprocess import filtering, entitiesfiltering8,135
+from datastreams.postprocess import filtering, entitiesentities8,135
+class prp(filtering.Filter):prp15,482
+	def initialize(self):initialize16,511
+	def finalize(self):finalize43,1031
+	def get_string(self, ed, len):get_string108,2618
+	def process(self, entity):process114,2737
+
+dsui_tmp/prp/prp_tests.py,919
+import syssys1,0
+import stringstring2,11
+import subprocesssubprocess3,25
+from os.path import abspath, joinabspath4,43
+from os.path import abspath, joinjoin4,43
+bin_output_dir = abspath("bins/")bin_output_dir41,417
+conf_output_dir = abspath("configs/")conf_output_dir42,451
+swap_dir = abspath("swaps/")swap_dir43,489
+prps = ['dumb','fifo','lru','secondchance']	# which page replacement policies to runprps48,542
+deltas = [1,2,4,8]			# sizes of the reference history windowdeltas49,627
+programs = [ 'access1', 'access2', 'matmult', 'access3', 'access4' ]	# which apps to runprograms50,688
+option_sets = [ { 'prp' : prpoption_sets53,801
+def genProcess( option_set ):genProcess63,1092
+def genDSUIConfs():genDSUIConfs90,2035
+aggregate_stdout = file( 'results' , 'w' )aggregate_stdout118,3014
+	processes = [ genProcess(option_set)processes121,3098
+		retcode = process.wait();retcode130,3324
+
+dsui_tmp/prp/Makefile,0
+
+dsui_tmp/makePDFs.py,83
+import syssys1,0
+import osos2,11
+g = []g5,76
+def main( prefix ):main35,728
+
+dsui_tmp/fixup.py,244
+import syssys1,0
+import osos2,11
+inf = sys.argv[1]inf4,22
+of = sys.argv[2]of5,40
+in_file = open(inf, 'r')in_file7,58
+out_file = open(of, 'w')out_file8,83
+path = os.getcwd()path10,109
+	line = line.replace("/tmp", path)line13,150
+
+dsui_tmp/doDPMetricsRun.sh,0
+
+dsui_tmp/histos2gnuplot.py,376
+terminalType = 'postscript'terminalType21,599
+def parseArgs():parseArgs23,628
+    import syssys24,645
+    import stringstring25,660
+def gpHeader( fname , title ):gpHeader44,987
+def gpPlots( hs , ipp , coln ):gpPlots59,1311
+    import stringstring60,1343
+    def getCol( coln , line ):getCol62,1362
+    import osos133,3716
+    import fnmatchfnmatch134,3730
+
+dsui_tmp/nachosfilters.py,886
+from datastreams.postprocess import filtering, entitiesfiltering1,0
+from datastreams.postprocess import filtering, entitiesentities1,0
+import pprintpprint2,56
+class thread_activity_periods(filtering.Filter):thread_activity_periods4,71
+    def initialize(self):initialize5,120
+    def process(self, entity):process20,851
+class process_thread_activity_periods(filtering.Filter):process_thread_activity_periods92,3437
+    def initialize(self):initialize93,3494
+    def process(self, entity):process102,3845
+    def finalize(self):finalize134,4821
+    def save_snapshot(self):save_snapshot153,5649
+    def gen_hist_active(self):gen_hist_active177,6329
+    def gen_hist_inactive(self):gen_hist_inactive249,8681
+    def gen_periodic_hist_active(self):gen_periodic_hist_active319,11039
+    def gen_periodic_hist_inactive(self):gen_periodic_hist_inactive405,13753
+
+dsui_tmp/Makefile,200
+DSUI_HEADER = dsui-headerDSUI_HEADER2,38
+IS_LOCAL_INSTALL = noIS_LOCAL_INSTALL4,65
+KUSP_INCLUDE_FLAGS = KUSP_INCLUDE_FLAGS6,88
+	KUSP_INCLUDE_FLAGS = -I/opt/kusp/includeKUSP_INCLUDE_FLAGS9,143
+
+debug/nachos-stub.cc,1746
+static const char hexchars[] = "0123456789abcdef";hexchars19,470
+static unsigned long crc32_table[256] =crc32_table22,587
+GDBRemoteDebugger::GDBRemoteDebugger (int port) {GDBRemoteDebugger30,742
+GDBRemoteDebugger::Exit () {Exit87,2093
+GDBRemoteDebugger::Initialize () {Initialize103,2524
+GDBRemoteDebugger::PutDebugChar (char ch) {PutDebugChar113,2773
+GDBRemoteDebugger::GetDebugChar () {GetDebugChar122,2963
+GDBRemoteDebugger::GDBCatchException (int number) {GDBCatchException134,3175
+GDBRemoteDebugger::SaveRegisters () {SaveRegisters146,3439
+GDBRemoteDebugger::RestoreRegisters () {RestoreRegisters165,3914
+GDBRemoteDebugger::Hex (char ch) {Hex184,4387
+GDBRemoteDebugger::CRC32 (unsigned char *buf, int len, unsigned int crc) {CRC32193,4610
+GDBRemoteDebugger::ReadMemory (int addr, int length, int *value) {ReadMemory221,5211
+GDBRemoteDebugger::WriteMemory (int addr, int length, int * value) {WriteMemory266,6338
+GDBRemoteDebugger::GetPacket () {GetPacket311,7469
+GDBRemoteDebugger::PutPacket () {PutPacket365,8674
+GDBRemoteDebugger::MemToHex (unsigned char *mem, char *buf, int count) {MemToHex398,9342
+GDBRemoteDebugger::HexToMem (unsigned char *buf, char *mem, int count) {HexToMem417,9697
+GDBRemoteDebugger::HexToInt (char **ptr, int *intValue) {HexToInt436,10048
+GDBRemoteDebugger::ComputeSignal (enum ExceptionType exception) {ComputeSignal463,10519
+GDBRemoteDebugger::ComputeException (int sig) {ComputeException485,11299
+GDBRemoteDebugger::HandleException (int number) {HandleException504,11870
+GDBRemoteDebugger::Handshake (int sig) {Handshake563,13308
+GDBRemoteDebugger::ProcessQuery () {ProcessQuery888,21024
+GDBRemoteDebugger::ReturnFromException () {ReturnFromException940,22196
+
+debug/nachos-stub.h,690
+#define __NACHOSSTUB_H____NACHOSSTUB_H__10,273
+#define BUFMAX BUFMAX25,750
+#define NUMREGS NUMREGS26,770
+#define KILL_REMOTE_DEBUGGER KILL_REMOTE_DEBUGGER28,790
+#define GDBBadVAddrReg GDBBadVAddrReg31,888
+#define GDBPCReg GDBPCReg32,914
+class GDBRemoteDebugger {GDBRemoteDebugger34,935
+  char *IntToHex (int num, char *buf, int count) {IntToHex55,1673
+  int sockFD;sockFD63,1958
+  int newSockFD;newSockFD64,1972
+  struct sockaddr_in serverAddr;serverAddr65,1989
+  struct sockaddr_in clientAddr;clientAddr66,2022
+  char remcomInBuffer[BUFMAX];remcomInBuffer67,2055
+  char remcomOutBuffer[BUFMAX];remcomOutBuffer68,2086
+  int registers[NUMREGS];registers69,2118
+
+dsui-sched/sched_postprocess.py,1062
+import syssys49,1561
+import osos50,1572
+test_parameters = (test_parameters58,1775
+dsui_test_outputs = []dsui_test_outputs116,3611
+DATA_DIR = "data"DATA_DIR128,3895
+HISTOGRAM_DIR = "histograms"HISTOGRAM_DIR135,4170
+PDFS_DIR = "pdfs"PDFS_DIR139,4295
+TESTOUTS_DIR = "test-outs"TESTOUTS_DIR141,4314
+processing_directories = ( DATA_DIR,processing_directories146,4479
+def vprint(v_string):vprint158,4821
+def prepare_directories():prepare_directories167,5064
+def execute_tests():execute_tests184,5625
+def execute_postprocess():execute_postprocess206,6476
+def graph_histograms():graph_histograms235,7455
+    import optparse, sys, osoptparse276,9052
+    import optparse, sys, ossys276,9052
+    import optparse, sys, osos276,9052
+    class Params_Set:Params_Set287,9548
+        USAGE = "usage: %prog [options]"USAGE288,9570
+        def __init__(self):__init__290,9616
+        def parse(self):parse323,11205
+        def __str__(self):__str__337,11823
+    def main():main353,12137
+    Params = Params_Set()    Params378,13035
+
+dsui-sched/create_nachos_histograms.py,812
+import cPicklecPickle19,442
+import matplotlib matplotlib20,457
+import matplotlib.pyplot as pltmatplotlib24,616
+import matplotlib.pyplot as pltplt24,616
+from string import uppercaseuppercase25,648
+SKIP_ADMIN_THREAD_ONE = TrueSKIP_ADMIN_THREAD_ONE33,1037
+def create_histograms_from_pickled_file(filepath, outfile, title, create_histograms_from_pickled_file36,1068
+    import optparse, sys, osoptparse126,4547
+    import optparse, sys, ossys126,4547
+    import optparse, sys, osos126,4547
+    class Params_Set:Params_Set137,5043
+        USAGE = "usage: %prog [options]"USAGE138,5065
+        def __init__(self):__init__140,5111
+        def parse(self):parse204,8588
+        def __str__(self):__str__224,9524
+    def main():main245,10067
+    Params = Params_Set()    Params279,11430
+
+dsui-sched/doDPMetricsRun.sh,0
+
+dsui-sched/histos2gnuplot.py,376
+terminalType = 'postscript'terminalType21,599
+def parseArgs():parseArgs23,628
+    import syssys24,645
+    import stringstring25,660
+def gpHeader( fname , title ):gpHeader44,987
+def gpPlots( hs , ipp , coln ):gpPlots59,1311
+    import stringstring60,1343
+    def getCol( coln , line ):getCol62,1362
+    import osos133,3716
+    import fnmatchfnmatch134,3730
+
+dsui-sched/nachosfilters.py,928
+from datastreams.postprocess import filtering, entitiesfiltering8,236
+from datastreams.postprocess import filtering, entitiesentities8,236
+from datastreams.postprocess.filters.input_output import picklepickle9,292
+from datastreams.postprocess.entities import TimeMeasurementTimeMeasurement10,356
+import cPicklecPickle11,417
+import pprintpprint12,432
+class NachosTime(TimeMeasurement):NachosTime14,447
+    def __init__(self, value):__init__23,784
+class CalculateThreadIntervalsFilter(filtering.Filter):CalculateThreadIntervalsFilter28,953
+    def initialize(self):initialize39,1341
+    def process(self, entity):process76,3121
+class ThreadStateIntervalFilter(filtering.Filter):ThreadStateIntervalFilter164,6979
+    expected_parameters = {expected_parameters177,7544
+    def initialize(self):initialize190,8182
+    def process(self, entity):process217,9275
+    def finalize(self):finalize276,11905
+
+dsui-sched/Makefile,199
+DSUI_HEADER = dsui-headerDSUI_HEADER1,0
+IS_LOCAL_INSTALL = noIS_LOCAL_INSTALL3,27
+KUSP_INCLUDE_FLAGS = KUSP_INCLUDE_FLAGS5,50
+	KUSP_INCLUDE_FLAGS = -I/opt/kusp/includeKUSP_INCLUDE_FLAGS8,105
+
+network/post.cc,923
+Mail::Mail(PacketHeader pktH, MailHeader mailH, char *msgData)Mail35,1254
+PrintHeader(PacketHeader pktHdr, MailHeader mailHdr)PrintHeader54,1853
+MailBox::Put(PacketHeader pktHdr, MailHeader mailHdr, char *data)Put74,2579
+MailBox::Get(PacketHeader *pktHdr, MailHeader *mailHdr, char *data) Get95,3338
+static void PostalHelper(size_t arg)PostalHelper123,4415
+static void ReadAvail(size_t arg)ReadAvail125,4515
+static void WriteDone(size_t arg)WriteDone127,4612
+PostOffice::PostOffice(NetworkAddress addr, double reliability, int nBoxes)PostOffice149,5647
+PostOffice::~PostOffice()~PostOffice177,6658
+PostOffice::PostalDelivery()PostalDelivery195,7186
+PostOffice::Send(PacketHeader pktHdr, MailHeader mailHdr, char* data)Send235,8391
+PostOffice::Receive(int box, PacketHeader *pktHdr, Receive282,10015
+PostOffice::IncomingPacket()IncomingPacket299,10565
+PostOffice::PacketSent()PacketSent315,11041
+
+network/nettest.cc,39
+MailTest(int farAddr)MailTest34,1179
+
+network/post.h,1345
+#define POST_HPOST_H29,1280
+typedef int MailBoxAddress;MailBoxAddress38,1514
+class MailHeader {MailHeader44,1707
+    MailBoxAddress to;		// Destination mail boxto46,1736
+    MailBoxAddress from;	// Mail box to reply tofrom47,1784
+    unsigned length;		// Bytes of message data (excluding the length48,1833
+#define MaxMailSize MaxMailSize55,2045
+class Mail {Mail64,2303
+     PacketHeader pktHdr;	// Header appended by NetworkpktHdr70,2471
+     MailHeader mailHdr;	// Header appended by PostOfficemailHdr71,2527
+     char data[MaxMailSize];	// Payload -- message datadata72,2585
+class MailBox {MailBox80,2885
+    SynchList messages;		// A mailbox is just a list of arrived messagesmessages89,3224
+class PostOffice {PostOffice101,3740
+    Network *network;		// Physical network connectionnetwork131,4859
+    NetworkAddress netAddr;	// Network address of this machinenetAddr132,4913
+    MailBox *boxes;		// Table of mail boxes to hold incoming mailboxes133,4976
+    int numBoxes;		// Number of mail boxesnumBoxes134,5042
+    KernelSemaphore *messageAvailable;// V'ed when message has arrived from networkmessageAvailable135,5085
+    KernelSemaphore *messageSent;	// V'ed when next message can be sent to networkmessageSent136,5169
+    Lock *sendLock;		// Only one outgoing message at a timesendLock137,5252
+
+network/Makefile,443
+DEFINES = -DUSER_PROGRAM -DVM -DFILESYS_NEEDED -DFILESYS -DNETWORKDEFINES11,424
+INCPATH = -I../network -I../bin -I../filesys -I../vm -I../userprog -I../threads -I../machineINCPATH12,491
+HFILES = $(THREAD_H) $(USERPROG_H) $(VM_H) $(FILESYS_H) $(NETWORK_H)HFILES13,584
+CFILES = $(THREAD_C) $(USERPROG_C) $(VM_C) $(FILESYS_C) $(NETWORK_C)CFILES14,653
+C_OFILES = $(THREAD_O) $(USERPROG_O) $(VM_O) $(FILESYS_O) $(NETWORK_O)C_OFILES15,722
+
+threads/histogram.cc,994
+Bucket::Bucket()Bucket10,99
+Bucket::Deposit( const HistoDatumT &datum )Deposit16,137
+Bucket::Reset()Reset37,466
+size_t Histogram::HistoN1 = 20;HistoN148,665
+size_t Histogram::HistoWidth1 = 10;HistoWidth149,697
+int Histogram::HistoMin1 = 0;HistoMin150,733
+size_t Histogram::HistoN2 = 20;HistoN251,763
+size_t Histogram::HistoWidth2 = 10;HistoWidth252,795
+int Histogram::HistoMin2 = 0;HistoMin253,831
+Histogram::Histogram( size_t _num_buckets , size_t _bucket_width ,Histogram56,881
+Histogram::~Histogram()~Histogram68,1298
+Histogram::RecordDatum( const HistoDatumT &datum )RecordDatum77,1442
+Histogram::Write( const char *fname , OWorA openmode ) constWrite107,2099
+void Histogram::Reset()Reset196,4237
+size_t Histogram::Count( bool &overflowed ) constCount211,4561
+HistoDatumT Histogram::Sum( bool &overflowed ) constSum259,5408
+bool Histogram::Minimum( HistoDatumT &min ) constMinimum265,5511
+bool Histogram::Maximum( HistoDatumT &max ) constMaximum295,6001
+
+threads/thread_ip.cc,812
+ThreadIP::ThreadIP(Thread* pcb) : host( pcb )ThreadIP33,836
+ThreadIP::~ThreadIP()~ThreadIP39,915
+void ThreadIP::recordInformation()recordInformation63,1770
+void ThreadIP::showDEBUG(char* debug_category)showDEBUG79,2201
+int ThreadIP::newDynamicPriority()newDynamicPriority133,3894
+void ThreadIP::reportMetricsDEBUG( char* debug_category )reportMetricsDEBUG140,4043
+void ThreadIP::ThreadFinished( Thread* t )ThreadFinished214,6278
+void ThreadIP::initializeInformation()initializeInformation277,8410
+void ThreadIP::cleanUpInformation()cleanUpInformation323,9547
+void ThreadIP::clearEpisode( ThreadIP::Episode *e )clearEpisode346,9963
+void ThreadIP::updateEpisodes()updateEpisodes356,10112
+void ThreadIP::updateMetrics()updateMetrics391,10938
+void ThreadIP::dumpHistos()dumpHistos438,12190
+
+threads/histogram.h,1077
+#define HISTO_HHISTO_H2,16
+typedef int HistoDatumT;HistoDatumT22,498
+class BucketBucket31,633
+  bool overflowed;overflowed42,786
+  size_t count;count43,805
+  HistoDatumT v_min;v_min44,821
+  HistoDatumT v_max;v_max45,842
+class HistogramHistogram51,892
+  enum OWorA { OVERWRITE , APPEND };OWorA54,919
+  enum OWorA { OVERWRITE , APPEND };OVERWRITE54,919
+  enum OWorA { OVERWRITE , APPEND };APPEND54,919
+  static size_t HistoN1;HistoN179,1618
+  static size_t HistoWidth1;HistoWidth180,1643
+  static int HistoMin1;HistoMin181,1672
+  static size_t HistoN2;HistoN284,1721
+  static size_t HistoWidth2;HistoWidth285,1746
+  static int HistoMin2;HistoMin286,1775
+  size_t num_buckets;num_buckets91,1901
+  size_t bucket_width;bucket_width92,1923
+  HistoDatumT range_min;range_min95,2010
+  HistoDatumT range_max;range_max99,2122
+  Bucket *buckets;buckets102,2199
+  Bucket underflow_bucket;underflow_bucket104,2219
+  Bucket overflow_bucket;overflow_bucket105,2246
+  HistoDatumT sum;sum109,2366
+  bool sum_overflowed;sum_overflowed110,2385
+
+threads/thread_ip.h,798
+#define THREAD_IP_HTHREAD_IP_H15,502
+class ThreadIPThreadIP41,1318
+  struct Episode {Episode45,1345
+    unsigned int Credits[NUM_THREAD_STATES];Credits48,1503
+  Thread *const host;host77,2358
+  size_t num_episodes;num_episodes109,3394
+  size_t episode_length;episode_length110,3417
+  size_t counter;counter111,3442
+  List recent_episodes;recent_episodes116,3575
+  unsigned int turnaroundTime;turnaroundTime127,3839
+  unsigned int waitingTime;waitingTime128,3870
+  unsigned int cpuTime;cpuTime130,3899
+  Histogram *histoInactive;histoInactive136,4107
+  unsigned int currentInactiveDuration;currentInactiveDuration137,4135
+  Histogram *histoActive;histoActive140,4213
+  unsigned int currentActiveDuration; // (possible optimization: couldcurrentActiveDuration141,4239
+
+threads/utility.cc,274
+static char *enableTags = NULL; // controls which DEBUG messages are printed enableTags15,454
+DebugInit(char *tagList)DebugInit33,1147
+DebugIsEnabled(char* tag)DebugIsEnabled51,1701
+DEBUG(char* tag, char *format, ...)DEBUG77,2323
+DebugCleanUp()DebugCleanUp97,2786
+
+threads/switch.h,3484
+#define SWITCH_HSWITCH_H18,561
+#define SP SP28,780
+#define S0 S029,793
+#define S1 S130,806
+#define S2 S231,819
+#define S3 S332,833
+#define S4 S433,847
+#define S5 S534,861
+#define S6 S635,875
+#define S7 S736,889
+#define FP FP37,903
+#define PC PC38,917
+#define InitialPC	InitialPC50,1412
+#define InitialArg	InitialArg51,1433
+#define WhenDonePC	WhenDonePC52,1455
+#define StartupPC	StartupPC53,1477
+#define PCState	PCState55,1499
+#define FPState	FPState56,1525
+#define InitialPCState	InitialPCState57,1551
+#define InitialArgState	InitialArgState58,1583
+#define WhenDonePCState	WhenDonePCState59,1616
+#define StartupPCState	StartupPCState60,1649
+#define I0 I067,1804
+#define I1 I168,1817
+#define I2 I269,1830
+#define I3 I370,1844
+#define I4 I471,1858
+#define I5 I572,1872
+#define I6 I673,1886
+#define I7 I774,1900
+#define FP FP77,1954
+#define PC PC78,1968
+#define InitialPC InitialPC81,2035
+#define InitialArg InitialArg82,2063
+#define WhenDonePC WhenDonePC83,2091
+#define StartupPC StartupPC84,2119
+#define PCState PCState86,2148
+#define InitialPCState InitialPCState87,2181
+#define InitialArgState InitialArgState88,2214
+#define WhenDonePCState WhenDonePCState89,2247
+#define StartupPCState StartupPCState90,2280
+#define   SP SP96,2436
+#define   S0 S097,2453
+#define   S1 S198,2470
+#define   S2 S299,2487
+#define   S3 S3100,2505
+#define   S4 S4101,2523
+#define   S5 S5102,2541
+#define   S6 S6103,2559
+#define   S7 S7104,2577
+#define   S8 S8105,2595
+#define   S9 S9106,2613
+#define   S10 S10107,2631
+#define   S11 S11108,2649
+#define   S12 S12109,2667
+#define   S13 S13110,2685
+#define   S14 S14111,2703
+#define   S15 S15112,2721
+#define   PC PC113,2739
+#define InitialPC InitialPC116,2810
+#define InitialArg InitialArg117,2848
+#define WhenDonePC WhenDonePC118,2876
+#define StartupPC StartupPC119,2904
+#define PCState PCState121,2933
+#define InitialPCState InitialPCState122,2966
+#define InitialArgState InitialArgState123,2999
+#define WhenDonePCState WhenDonePCState124,3032
+#define StartupPCState StartupPCState125,3065
+#define _ESP _ESP131,3214
+#define _EAX _EAX132,3233
+#define _EBX _EBX133,3252
+#define _ECX _ECX134,3271
+#define _EDX _EDX135,3291
+#define _EBP _EBP136,3311
+#define _ESI _ESI137,3331
+#define _EDI _EDI138,3351
+#define _PC _PC139,3371
+#define PCState PCState142,3453
+#define FPState FPState143,3487
+#define InitialPCState InitialPCState144,3522
+#define InitialArgState InitialArgState145,3557
+#define WhenDonePCState WhenDonePCState146,3592
+#define StartupPCState StartupPCState147,3627
+#define InitialPC InitialPC149,3663
+#define InitialArg InitialArg150,3692
+#define WhenDonePC WhenDonePC151,3721
+#define StartupPC StartupPC152,3750
+#define SP SP163,3983
+#define S0 S0164,3997
+#define S1 S1165,4011
+#define S2 S2166,4025
+#define S3 S3167,4039
+#define S4 S4168,4053
+#define S5 S5169,4067
+#define FP FP170,4081
+#define GP GP171,4095
+#define PC PC172,4109
+#define InitialPC InitialPC183,4603
+#define InitialArg InitialArg184,4628
+#define WhenDonePC WhenDonePC185,4653
+#define StartupPC StartupPC186,4678
+#define PCState PCState188,4704
+#define FPState FPState189,4743
+#define InitialPCState InitialPCState190,4782
+#define InitialArgState InitialArgState191,4821
+#define WhenDonePCState WhenDonePCState192,4860
+#define StartupPCState StartupPCState193,4899
+
+threads/utility.h,817
+#define UTILITY_HUTILITY_H38,1420
+#define DB_ALL	DB_ALL47,1548
+#define DB_THREAD	DB_THREAD48,1570
+#define DB_SYNCH	DB_SYNCH49,1597
+#define DB_INTERRUPT	DB_INTERRUPT50,1622
+#define DB_MACHINE	DB_MACHINE51,1655
+#define DB_DISK	DB_DISK52,1684
+#define DB_FILESYS	DB_FILESYS53,1708
+#define DB_ADDRESS	DB_ADDRESS54,1737
+#define DB_NETWORK	DB_NETWORK55,1766
+#define DB_RGDB	DB_RGDB56,1795
+#define DB_INSTRUMENT	DB_INSTRUMENT57,1825
+#define DB_SEM DB_SEM59,1884
+#define DB_NICE DB_NICE62,1958
+#define min(min69,2047
+#define max(max70,2091
+#define divRoundDown(divRoundDown73,2175
+#define divRoundUp(divRoundUp74,2214
+typedef void (*VoidFunctionPtr)(size_t arg); VoidFunctionPtr85,2618
+typedef void (*VoidNoArgFunctionPtr)(); VoidNoArgFunctionPtr86,2664
+#define ASSERT(ASSERT113,3541
+
+threads/dp_hooks.cc,134
+int rough_newDP( const List& recent_episodes,rough_newDP16,273
+void rough_transitioning( Thread* host, rough_transitioning51,1249
+
+threads/threadtest.cc,79
+SimpleThread(size_t which)SimpleThread25,826
+ThreadTest()ThreadTest42,1303
+
+threads/thread.cc,2871
+#define STACK_FENCEPOST STACK_FENCEPOST29,989
+double Thread::dpRetentionFactor = 0.0;dpRetentionFactor35,1234
+bool Thread::wssContractionEnabled = false;wssContractionEnabled38,1296
+struct ForkArgs {ForkArgs43,1388
+  VoidFunctionPtr func;func44,1406
+  size_t arg;arg45,1430
+  Thread *thread;thread46,1444
+Thread::Print() {Print56,1707
+int Thread::Get_Id() {Get_Id77,2242
+int Thread::Get_Priority() {Get_Priority87,2525
+void Thread::Prioritize (int p) {Prioritize103,3048
+int Thread::Get_Static_Priority (void) {Get_Static_Priority119,3462
+void Thread::Age_Priority (void) {Age_Priority130,3799
+void Thread::Reduce_Advantage (void) {Reduce_Advantage156,4512
+int Thread::Get_Num_Children() {Get_Num_Children169,4922
+void Thread::Add_Child() {Add_Child174,4978
+void Thread::Remove_Child() {Remove_Child179,5023
+void Thread::Queue_Child(Thread * child) {Queue_Child187,5117
+Thread* Thread::UnQueue_Child() {UnQueue_Child192,5192
+Thread* Thread::Get_Parent_Ptr() {Get_Parent_Ptr197,5283
+int Thread::Set_Parent_Ptr( Thread * Parent ) {Set_Parent_Ptr202,5342
+int Thread::Get_Exit_Val() {Get_Exit_Val211,5476
+void Thread::Set_Exit_Val( int val ) {Set_Exit_Val216,5527
+void Thread::sampleIP()sampleIP227,5846
+void Thread::NotifyOfExit( Thread* t )NotifyOfExit245,6350
+void Thread::resetWssRefreshCounter()resetWssRefreshCounter252,6466
+bool Thread::incrWssRefreshCounter()incrWssRefreshCounter257,6534
+void Thread::refreshWss()refreshWss271,6755
+Thread::Thread() : thIP( this )Thread306,7841
+Thread::~Thread()~Thread382,9819
+void *ThreadRoot(void *arg_struct)ThreadRoot421,10486
+void SWITCH(Thread *oldThread, Thread *newThread)SWITCH451,11268
+Thread::Fork(VoidFunctionPtr func, size_t arg)Fork495,12712
+Thread::CheckOverflow()CheckOverflow537,14086
+void Thread::setStatus(ThreadStatus st) {setStatus549,14320
+ThreadStatus Thread::getStatus () const { return tstatus; }getStatus566,14730
+Thread::Finish ()Finish585,15507
+Thread::ReachedExit ()ReachedExit625,16795
+Thread::HasReachedExit ()HasReachedExit656,17569
+Thread::Yield ()Yield681,18471
+Thread::ForceYield ( Thread * nextThread)ForceYield714,19459
+Thread::Sleep (ThreadStatus newstatus)Sleep753,20924
+Thread::killThread (ThreadStatus newstatus)killThread785,21821
+static void ThreadFinish()ThreadFinish816,22815
+static void InterruptEnable()InterruptEnable821,22874
+void ThreadPrint(size_t arg)ThreadPrint834,23163
+void ThreadAge(size_t arg)ThreadAge841,23258
+Thread::StackAllocate (VoidFunctionPtr func, size_t arg)StackAllocate862,23858
+Thread::SaveUserState()SaveUserState924,26045
+Thread::RestoreUserState()RestoreUserState941,26616
+int Thread::find_next_available_fd () {find_next_available_fd952,26982
+void Thread::setFD (int fd, FDTEntry *file) {setFD966,27329
+FDTEntry *Thread::getFD (int fd) {getFD983,27804
+
+threads/nachos-gdb.h,410
+#define __NACHOS_GDB____NACHOS_GDB__2,23
+struct nachos_thread {nachos_thread4,47
+  void *thread;thread5,70
+  int ID;ID6,86
+  struct nachos_thread *next;next7,96
+struct nachos_thread_list_struct {nachos_thread_list_struct10,130
+  struct nachos_thread *head;head11,165
+  struct nachos_thread *tail;tail12,195
+typedef struct nachos_thread_list_struct nachos_thread_list;nachos_thread_list15,229
+
+threads/dp_hooks.h,37
+#define DP_HOOKS_HDP_HOOKS_H14,476
+
+threads/thread.h,2673
+#define THREAD_HTHREAD_H38,1546
+#define MachineStateSize MachineStateSize71,2289
+#define StackSize	StackSize76,2411
+class Thread {Thread102,3245
+  unsigned int* stackTop;		 // the current stack pointerstackTop106,3387
+  u_long machineState[MachineStateSize]; // all registers except for stackTopmachineState108,3462
+  unsigned int machineState[MachineStateSize];  // all registers except for stackTopmachineState110,3546
+  const char* GetName() const { return (char *) *name; }GetName146,4815
+  void SetName (char *threadName) { SetName147,4872
+  const char* GetName() const { return name; }GetName151,4965
+  void SetName (char *threadName) { SetName152,5012
+  static double dpRetentionFactor;dpRetentionFactor178,5809
+  static bool wssContractionEnabled;wssContractionEnabled181,5866
+  List ChildList; // List of Children for the currentThreadChildList195,6272
+  Statistics *procStats; // Object to record performance metrics.procStats196,6332
+  int Children; // variable denoting the number of Children to the currentThreadChildren205,6727
+  KernelSemaphore* ChildExited;  ChildExited212,7021
+  bool thread_exit_status; // To signal to the parent that the child has finished executionthread_exit_status215,7063
+  pthread_t realThread;realThread218,7175
+  pthread_mutex_t schedLock;schedLock219,7199
+  pthread_cond_t schedCond;schedCond220,7228
+  bool runNow;runNow221,7256
+  bool hasReachedExit;		// has the thread exhausted its code execution?hasReachedExit242,7801
+  unsigned int wssRefreshCounter;  // how many more quanta before thiswssRefreshCounter245,7895
+  static const unsigned int WSS_REFRESH_PERIOD = 10;WSS_REFRESH_PERIOD250,8091
+  ThreadIP thIP;		// instrumentation pointthIP254,8191
+    Thread* ParentPtr;ParentPtr258,8280
+    int exitval;exitval259,8303
+    unsigned int* stack; 	// Bottom of the stack; NULL if this is thestack261,8327
+    ThreadStatus tstatus;	// ready, running or blockedtstatus263,8448
+	char *name;name265,8530
+    char name [MAXFILENAMELENGTH + 1];name267,8575
+    int ThreadID;ThreadID269,8647
+    int Priority;		// The static priority of a process (thread)Priority277,8860
+    int Counter;		// The dynamic priorityCounter279,8942
+    int userRegisters[NumTotalRegs];	// user-level CPU register stateuserRegisters288,9233
+    FDTEntry *FDTable [MAX_FD];         // File Descriptor Table entriesFDTable289,9303
+    void Write_Reg(int place, int value) { userRegisters[place] = value; }Write_Reg294,9515
+    int Read_Reg(int place) { return userRegisters[place]; }Read_Reg295,9590
+    AddrSpace *space;			// User code this thread is running.space296,9651
+
+threads/copyright.h,146
+static char *copyright = (char *) "Copyright (c) 1992-1993 The Regents of the University of California.  All rights reserved.";copyright23,1095
+
+threads/list.cc,823
+ListElement::ListElement(void *itemPtr)ListElement29,974
+List::List()List41,1236
+List::~List()~List57,1792
+bool List::IsEmpty () constIsEmpty68,2111
+void List::Prepend (void *item)Prepend84,2592
+void List::Append(void *item)Append112,3292
+void *List::Remove ()Remove133,3840
+void *List::Remove (void *item)Remove163,4388
+void List::Delete (void *item)Delete203,5162
+void *List::Head () constHead214,5472
+void *List::Tail () constTail224,5755
+void List::Mapcar (VoidFunctionPtr func) constMapcar241,6330
+void *List::Nth(unsigned int n) constNth256,6716
+SortedList::setComparator (listItemComparator comp)setComparator282,7244
+void SortedList::Insert (void *item)Insert300,7851
+void SortedList::Sort ()Sort338,9075
+merge_sort( ListElement* &head , listItemComparator cmp )merge_sort365,9687
+
+threads/list.h,554
+#define LIST_HLIST_H17,606
+class ListElement {ListElement29,968
+  ListElement *next;		// next element on list, NULL if this is lastnext33,1042
+  void *item;			// the actual itemitem34,1110
+class List {List40,1286
+  ListElement *first;		// Head of the list, NULL if list is emptyfirst57,2006
+  ListElement *last;		// Last element of list, NULL if emptylast58,2072
+typedef bool (*listItemComparator)(void *, void *);listItemComparator72,2512
+class SortedList : public List {SortedList77,2655
+  listItemComparator compare;compare82,2818
+
+threads/scheduler.cc,965
+Scheduler::Scheduler (size_t quantum_in, size_t inertia_in)Scheduler35,1205
+ThreadOrder(void *thread1, void *thread2)ThreadOrder58,1775
+Scheduler::ReadyToRun (Thread *thread)ReadyToRun82,2614
+debugShowReadyList( List& l )debugShowReadyList117,3684
+void debug_ancillary_tprint( size_t arg )debug_ancillary_tprint130,3988
+Scheduler::FindNextToRun ()FindNextToRun156,4799
+Scheduler::Run (Thread *nextThread)Run252,7745
+Scheduler::PrintReadyList()PrintReadyList348,10868
+Scheduler::addToList (Thread* thread)addToList375,11584
+Scheduler::removeFromList (Thread* thread)removeFromList400,12179
+Scheduler::GetThis (Thread* thread)GetThis434,12948
+void Scheduler::Switch_To( Thread * newthread ) {Switch_To448,13461
+size_t Scheduler::Quantum() const {Quantum474,13939
+bool Scheduler::InertiaIsSpent() const {InertiaIsSpent479,14013
+void Scheduler::SpendInertia() {SpendInertia483,14090
+void Scheduler::ResetInertia() {ResetInertia487,14150
+
+threads/switch.s,861
+#define z       $0      /* zero register */z45,1410
+#define a0      $4      /* argument registers */a046,1454
+#define a1      $5a147,1503
+#define s0      $16     /* callee saved */s048,1522
+#define s1      $17s149,1565
+#define s2      $18s250,1585
+#define s3      $19s351,1605
+#define s4      $20s452,1625
+#define s5      $21s553,1645
+#define s6      $22s654,1665
+#define s7      $23s755,1685
+#define sp      $29     /* stack pointer */sp56,1705
+#define fp      $30     /* frame pointer */fp57,1749
+#define ra      $31     /* return address */ra58,1793
+ThreadRoot:ThreadRoot65,1913
+SWITCH:SWITCH82,2328
+_ThreadRoot:_ThreadRoot130,3583
+_SWITCH:_SWITCH158,4443
+ThreadRootThreadRoot191,4976
+SWITCHSWITCH211,5382
+ThreadRoot:ThreadRoot280,6949
+SWITCH:SWITCH307,7636
+ThreadRoot:ThreadRoot352,9135
+SWITCH:SWITCH376,9725
+
+threads/scheduler.h,274
+#define SCHEDULER_HSCHEDULER_H11,377
+class Scheduler {Scheduler29,837
+  size_t quantum;			// number of ticks between scheduling interruptsquantum55,1671
+  SortedList readyList;			// queue of threads that are ready toreadyList58,1742
+  int threadid;threadid61,1840
+
+threads/synchlist.cc,287
+SynchList::SynchList()SynchList27,934
+SynchList::~SynchList()~SynchList39,1303
+void SynchList::Prepend(void *item)Prepend54,1707
+void SynchList::Append(void *item)Append71,2251
+void *SynchList::Remove()Remove88,2758
+void SynchList::Mapcar(VoidFunctionPtr func)Mapcar110,3323
+
+threads/synchlist.h,246
+#define SYNCHLIST_HSYNCHLIST_H13,402
+class SynchList : public List {SynchList27,787
+  Lock *lock;			// enforce mutual exclusive access to the listlock41,1316
+  Condition *listEmpty;		// wait in Remove if the list is emptylistEmpty42,1379
+
+threads/defs.h,876
+#define DEFS_HDEFS_H2,15
+#define MAXFILENAMELENGTH MAXFILENAMELENGTH5,70
+#define MAXSEMS MAXSEMS7,124
+#define MAX_FD MAX_FD11,237
+enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED, ZOMBIE, NUM_THREAD_STATES };ThreadStatus14,301
+enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED, ZOMBIE, NUM_THREAD_STATES };JUST_CREATED14,301
+enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED, ZOMBIE, NUM_THREAD_STATES };RUNNING14,301
+enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED, ZOMBIE, NUM_THREAD_STATES };READY14,301
+enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED, ZOMBIE, NUM_THREAD_STATES };BLOCKED14,301
+enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED, ZOMBIE, NUM_THREAD_STATES };ZOMBIE14,301
+enum ThreadStatus { JUST_CREATED, RUNNING, READY, BLOCKED, ZOMBIE, NUM_THREAD_STATES };NUM_THREAD_STATES14,301
+
+threads/main.cc,93
+#define MAINMAIN78,3255
+#undef MAINMAIN80,3291
+main(int argc, char **argv)main111,4243
+
+threads/synch.cc,2418
+SleepWakeupSet::SleepWakeupSet(void *t)SleepWakeupSet32,1272
+SleepWakeupSet::~SleepWakeupSet()~SleepWakeupSet38,1343
+SleepWakeupSet *SleepWakeupManager::FindSWSet(void *tag)FindSWSet44,1458
+void SleepWakeupManager::AppendSWSet(SleepWakeupSet *newset)AppendSWSet59,1710
+void *SleepWakeupManager::RemoveSWSet(void *tag)RemoveSWSet78,2083
+void *SleepWakeupManager::RemoveSWSet()RemoveSWSet108,2607
+SleepWakeupManager::SleepWakeupManager()SleepWakeupManager127,2903
+SleepWakeupManager::~SleepWakeupManager()~SleepWakeupManager132,2966
+void SleepWakeupManager::Sleep(void *tag)Sleep141,3167
+void SleepWakeupManager::Wakeup(void *tag)Wakeup172,3971
+void SleepWakeupManager::WakeupProc(Thread *proc, void *tag)WakeupProc192,4389
+BasicBlockingSemaphore::BasicBlockingSemaphore(char *id)BasicBlockingSemaphore209,4709
+BasicBlockingSemaphore::~BasicBlockingSemaphore()~BasicBlockingSemaphore217,4874
+int BasicBlockingSemaphore::GetValue()GetValue225,5022
+void BasicBlockingSemaphore::SetValue(int val)SetValue232,5132
+char *BasicBlockingSemaphore::GetName()GetName239,5249
+void BasicBlockingSemaphore::AddOwner(Thread *thread)AddOwner246,5359
+Thread* BasicBlockingSemaphore::RemoveOwner(Thread *thread)RemoveOwner253,5493
+bool BasicBlockingSemaphore::HasOwners()HasOwners260,5663
+QueueingSemaphore::~QueueingSemaphore() ~QueueingSemaphore267,5787
+void QueueingSemaphore::Enqueue(Thread *thread)Enqueue275,5936
+Thread *QueueingSemaphore::Dequeue()Dequeue282,6063
+KernelSemaphore::~KernelSemaphore()~KernelSemaphore301,6677
+KernelSemaphore::P()P325,7384
+KernelSemaphore::V()V352,8288
+Lock::~Lock()~Lock370,8881
+Lock::Acquire()Acquire391,9495
+Lock::Release()Release417,10443
+Lock::isHeldByCurrentThread()isHeldByCurrentThread434,10947
+Condition::~Condition()~Condition445,11301
+void Condition::Wait(Lock* conditionLock) {Wait464,11878
+void Condition::Signal(Lock* conditionLock)Signal485,12702
+void Condition::Broadcast(Lock* conditionLock)Broadcast502,13255
+Lock::~Lock() {}~Lock519,13832
+void Lock::Acquire() {}Acquire520,13849
+void Lock::Release() {}Release521,13873
+Condition::~Condition() { }~Condition523,13898
+void Condition::Wait(Lock* conditionLock) { Wait524,13926
+void Condition::Signal(Lock* conditionLock) { conditionLock = NULL; }Signal528,14016
+void Condition::Broadcast(Lock* conditionLock) { conditionLock = NULL; }Broadcast529,14086
+
+threads/system.cc,2254
+Thread *currentThread;			// the thread we are running nowcurrentThread35,897
+Thread *threadToBeDestroyed;  		// the thread that just finishedthreadToBeDestroyed36,955
+Scheduler *scheduler = NULL;		// the schedulerscheduler37,1020
+Interrupt *interrupt;			// interrupt statusinterrupt38,1067
+Statistics *stats;			// performance metricsstats39,1111
+Timer *schedTimer;			// the hardware timer device,schedTimer40,1155
+char* mainProgramName;			// -x parameter nachos was launched withmainProgramName42,1244
+Timer *instrumentTimer;instrumentTimer45,1330
+DP_Hooks dp_hooks;dp_hooks49,1402
+SleepWakeupManager *SWManager;SWManager53,1474
+BasicBlockingSemaphore *BBSemTable[MAXSEMS];BBSemTable54,1505
+QueueingSemaphore *QSemTable[MAXSEMS];QSemTable55,1550
+int curBBSem = 0; /* Maximum index used in BBSemTable */curBBSem56,1589
+int curQSem = 0; /* Maximum index used in QSemTable */curQSem57,1646
+nachos_thread_list allThreads = {NULL, NULL};allThreads61,1764
+FileSystem  *fileSystem;fileSystem65,1834
+SynchDisk   *synchDisk;synchDisk69,1882
+Machine *machine;	// user program memory and registersmachine74,1998
+int GDBRemotePort = 0;;GDBRemotePort76,2090
+GDBRemoteDebugger * remoteDebugger;     // GDB remote debugger for user programsremoteDebugger77,2114
+MemoryManager *memory;memory79,2202
+SwapManager *swap;swap80,2225
+Console *console;console81,2244
+bool wasYieldOnReturn = false;wasYieldOnReturn82,2262
+bool printProcStats = false;printProcStats83,2293
+int wsDeltaSize = 1;wsDeltaSize84,2322
+PageReplPolicies pageReplPolicy = DUMB;pageReplPolicy85,2343
+KernelSemaphore *consoleRead; consoleRead92,2735
+KernelSemaphore *consoleWrite;consoleWrite93,2766
+KernelSemaphore *consoleReadAvail;consoleReadAvail97,2922
+KernelSemaphore *consoleWriteDone;consoleWriteDone98,2957
+static void ConsoleReadAvail(size_t arg) {ConsoleReadAvail102,3111
+static void ConsoleWriteDone(size_t arg) {ConsoleWriteDone106,3254
+PostOffice *postOffice;postOffice114,3421
+SchedTimerInterruptHandler(size_t dummy)SchedTimerInterruptHandler140,4422
+InstrumentTimerInterruptHandler(size_t dummy)InstrumentTimerInterruptHandler186,5938
+Initialize(int argc, char **argv)Initialize226,7227
+Cleanup()Cleanup478,15302
+
+threads/histo_test.cc,44
+main( int argc , char *argv[] )main19,372
+
+threads/synch.h,1604
+#define SYNCH_HSYNCH_H19,701
+class SleepWakeupSet {SleepWakeupSet33,929
+	void *tag;tag38,1008
+	List threads;threads39,1020
+	SleepWakeupSet *next;next40,1035
+class SleepWakeupManager {SleepWakeupManager44,1128
+	SleepWakeupSet *swsets;swsets53,1303
+class BasicBlockingSemaphore {BasicBlockingSemaphore61,1456
+	char name[MAXFILENAMELENGTH];name73,1712
+	int value;value74,1743
+	List owners;owners75,1755
+class QueueingSemaphore : public BasicBlockingSemaphore {QueueingSemaphore78,1773
+	QueueingSemaphore(char *name) : BasicBlockingSemaphore(name){};QueueingSemaphore80,1841
+	List queue;queue85,1988
+class KernelSemaphore {KernelSemaphore104,2741
+  KernelSemaphore(char* debugName, int initialValue)KernelSemaphore106,2774
+  char* getName() { return name;}			// debugging assistgetName109,2926
+  char* name;		// useful for debuggingname115,3094
+  int value;		// semaphore value, always >= 0value116,3133
+  List queue;		// threads waiting in P() for value > 0queue117,3179
+class Lock {Lock136,3803
+  Lock(char* debugName) : name(debugName), owner(NULL) {}Lock139,3840
+  char* getName() { return name; }	// debugging assistgetName144,4017
+  char* name;			// for debuggingname154,4353
+  Thread *owner;		// lock owner, NULL if noneowner156,4401
+  List queue;			// threads waiting for the lockqueue157,4447
+class Condition {Condition195,6172
+  Condition(char* debugName) : name(debugName) {}Condition197,6199
+  char* getName() { return name; }getName199,6296
+  char* name;name210,6695
+  List queue;				// threads waiting on the conditionqueue212,6724
+
+threads/system.h,386
+#define SYSTEM_HSYSTEM_H9,296
+enum PageReplPolicies {DUMB, FIFO, LRU, SECONDCHANCE};PageReplPolicies35,719
+enum PageReplPolicies {DUMB, FIFO, LRU, SECONDCHANCE};DUMB35,719
+enum PageReplPolicies {DUMB, FIFO, LRU, SECONDCHANCE};FIFO35,719
+enum PageReplPolicies {DUMB, FIFO, LRU, SECONDCHANCE};LRU35,719
+enum PageReplPolicies {DUMB, FIFO, LRU, SECONDCHANCE};SECONDCHANCE35,719
+
+threads/ifdef_symbols.h,142
+#define REMOTE_USER_PROGRAM_DEBUGGINGREMOTE_USER_PROGRAM_DEBUGGING9,361
+#define F_ERRORMSGF_ERRORMSG18,551
+#define F_SLEEPF_SLEEP26,789
+
+threads/Makefile,233
+DEFINES = -DTHREADS -DSMARTGDBDEFINES10,362
+INCPATH = -I../threads -I../machine -I../userprog -I../filesysINCPATH11,393
+HFILES = $(THREAD_H)HFILES12,456
+CFILES = $(THREAD_C)CFILES13,477
+C_OFILES = $(THREAD_O)C_OFILES14,498
+
+dsui/prp/prp_table.py,840
+import stringstring1,0
+import subprocesssubprocess2,14
+prps = ['dumb','fifo','lru','secondchance']	# which page replacement policies to runprps7,56
+deltas = [1,2,4,8]			# sizes of the reference history windowdeltas8,141
+programs = [ 'access1', 'access2', 'matmult', 'access3', 'access4' ]	# which apps to runprograms9,202
+option_sets = [ { 'prp' : prpoption_sets12,315
+table = {}table23,627
+	stat_file = open("data/%s.stats" % option_set['tag'], "r")stat_file38,991
+	conf = stat_file.readline().split()conf39,1051
+	stat = stat_file.readline().split()stat40,1088
+min_prp_width = 15min_prp_width48,1382
+min_results_width = 15min_results_width49,1401
+num_deltas = len( deltas )num_deltas50,1424
+		t = table[program][prp]t62,1757
+			result = "%s/%s" % (t[delta]['page_faults'], t[delta]['page_outs'])result65,1860
+
+dsui/prp/prp_filters.py,782
+import syssys1,0
+import osos2,11
+import structstruct3,21
+import stringstring4,35
+import pprintpprint5,49
+from datastreams.postprocess.filters import filter_frameworkfilter_framework9,136
+from datastreams.postprocess.format.constants import constconst10,197
+from datastreams.postprocess.io import input_streaminput_stream11,256
+from datastreams.postprocess.format import extra_data_routinesextra_data_routines12,308
+from pykusp.namespaces import read_namespace_listread_namespace_list13,371
+class prp_filter(filter_framework.abstract_filter):prp_filter15,422
+	def __init__(self, parameters, _input=None, _output=None):__init__16,474
+	def close(self):close27,770
+	def get_string(self, ed, len):get_string90,2352
+	def process(self, entity):process94,2469
+
+dsui/prp/prp_histos,0
+
+dsui/prp/prp_tests.py,919
+import syssys1,0
+import stringstring2,11
+import subprocesssubprocess3,25
+from os.path import abspath, joinabspath4,43
+from os.path import abspath, joinjoin4,43
+bin_output_dir = abspath("bins/")bin_output_dir39,505
+conf_output_dir = abspath("configs/")conf_output_dir40,539
+swap_dir = abspath("swaps/")swap_dir41,577
+prps = ['dumb','fifo','lru','secondchance']	# which page replacement policies to runprps46,630
+deltas = [1,2,4,8]			# sizes of the reference history windowdeltas47,715
+programs = [ 'access1', 'access2', 'matmult', 'access3', 'access4' ]	# which apps to runprograms48,776
+option_sets = [ { 'prp' : prpoption_sets51,889
+def genProcess( option_set ):genProcess61,1180
+def genDSUIConfs():genDSUIConfs88,2130
+aggregate_stdout = file( 'results' , 'w' )aggregate_stdout115,3025
+	processes = [ genProcess(option_set)processes118,3109
+		retcode = process.wait();retcode127,3335
+
+dsui/prp/Makefile,0
+
+dsui/makePDFs.py,83
+import syssys1,0
+import osos2,11
+g = []g5,76
+def main( prefix ):main34,659
+
+dsui/fixup.py,255
+import syssys1,0
+import osos2,11
+inf = sys.argv[1]inf4,22
+of = sys.argv[2]of5,40
+in_file = open(inf, 'r')in_file7,58
+out_file = open(of, 'w')out_file8,83
+home = os.environ.get("HOME")home10,109
+	line = line.replace("/tmp", home)line13,161
+
+dsui/nachos_filters.py,2320
+import syssys1,0
+import osos2,11
+import structstruct3,21
+import stringstring4,35
+import pprintpprint5,49
+from datastreams.postprocess.filters import filter_frameworkfilter_framework9,136
+from datastreams.postprocess.format.constants import constconst10,197
+from datastreams.postprocess.io import input_streaminput_stream11,256
+from datastreams.postprocess.format import extra_data_routinesextra_data_routines12,308
+from pykusp.namespaces import read_namespace_listread_namespace_list13,371
+NACHOS_STATUS_I = ['JUST_CREATED', 'RUNNING', 'READY', 'BLOCKED', 'ZOMBIE', 'NUM_THREAD_STATES']NACHOS_STATUS_I16,511
+NACHOS_STATUS_S = {NACHOS_STATUS_S17,608
+class nachos_narrate_filter(filter_framework.abstract_filter):nachos_narrate_filter70,1902
+	def __init__(self, parameters, _input=None, _output=None):__init__71,1965
+	def process(self, entity):process75,2101
+class set_nachos_clock_filter(filter_framework.abstract_filter):set_nachos_clock_filter80,2171
+	def __init__(self, parameters, _input=None, _output=None):__init__81,2236
+	def process(self, entity):process86,2388
+class inactivity_hist_filter(filter_framework.abstract_filter):inactivity_hist_filter95,2577
+	def __init__(self, parameters, _input=None, _output=None):__init__96,2641
+	def close(self):close103,2839
+	def process(self, entity):process171,4296
+class activity_hist_filter(filter_framework.abstract_filter):activity_hist_filter191,4757
+	def __init__(self, parameters, _input=None, _output=None):__init__192,4819
+	def close(self):close198,4994
+	def process(self, entity):process264,6444
+class inactivity_periodic_hist_filter(filter_framework.abstract_filter):inactivity_periodic_hist_filter287,6913
+	def __init__(self, parameters, _input=None, _output=None):__init__288,6986
+	def save_snapshot(self):save_snapshot297,7221
+	def gen_hist(self):gen_hist307,7484
+	def close(self):close388,9212
+	def process(self, entity):process391,9249
+class activity_periodic_hist_filter(filter_framework.abstract_filter):activity_periodic_hist_filter424,9953
+	def __init__(self, parameters, _input=None, _output=None):__init__425,10024
+	def save_snapshot(self):save_snapshot434,10259
+	def gen_hist(self):gen_hist444,10522
+	def close(self):close525,12248
+	def process(self, entity):process528,12285
+
+dsui/doDPMetricsRun.sh,0
+
+dsui/histos2gnuplot.py,377
+terminalType = 'postscript'terminalType21,599
+def parseArgs():parseArgs23,628
+    import syssys24,645
+    import stringstring25,660
+def gpHeader( fname , title ):gpHeader45,1039
+def gpPlots( hs , ipp , coln ):gpPlots60,1363
+    import stringstring61,1395
+    def getCol( coln , line ):getCol63,1414
+    import osos134,3768
+    import fnmatchfnmatch135,3782
+
+dsui/Makefile,0
+
+machine/network.h,1341
+#define NETWORK_HNETWORK_H16,608
+typedef int NetworkAddress;	 NetworkAddress25,818
+class PacketHeader {PacketHeader33,1145
+    NetworkAddress to;		// Destination machine IDto35,1176
+    NetworkAddress from;	// source machine IDfrom36,1226
+    unsigned length;	 	// bytes of packet data, excluding the length37,1272
+#define MaxWireSize MaxWireSize42,1428
+#define MaxPacketSize MaxPacketSize43,1498
+class Network {Network57,2173
+    NetworkAddress ident;	// This machine's network addressident86,3273
+    double chanceToWork;	// Likelihood packet will be droppedchanceToWork87,3333
+    int sock;			// UNIX socket number for incoming packetssock88,3395
+    char sockName[32];		// File name corresponding to UNIX socketsockName89,3454
+    VoidFunctionPtr writeHandler; // Interrupt handler, signalling next packet writeHandler90,3520
+    VoidFunctionPtr readHandler;  // Interrupt handler, signalling packet has readHandler92,3627
+    int handlerArg;		// Argument to be passed to interrupt handlerhandlerArg94,3723
+    bool sendBusy;		// Packet is being sent.sendBusy96,3824
+    bool packetAvail;		// Packet has arrived, can be pulled off ofpacketAvail97,3869
+    PacketHeader inHdr;		// Information about arrived packetinHdr99,3953
+    char inbox[MaxPacketSize];  // Data for arrived packetinbox100,4014
+
+machine/disk.h,675
+#define DISK_HDISK_H18,725
+#define SectorSize SectorSize51,2239
+#define SectorsPerTrack SectorsPerTrack52,2299
+#define NumTracks NumTracks53,2364
+#define NumSectors NumSectors54,2416
+class Disk {Disk57,2504
+    int fileno;				// UNIX file number for simulated disk fileno81,3326
+    VoidFunctionPtr handler;		// Interrupt handler, to be invoked handler82,3385
+    size_t handlerArg;			// Argument to interrupt handler handlerArg84,3491
+    bool active;     			// Is a disk operation in progress?active85,3550
+    int lastSector;			// The previous disk request lastSector86,3610
+    int bufferInit;			// When the track buffer started bufferInit87,3662
+
+machine/interrupt.cc,889
+static char *intLevelNames[] = {(char *) "off", (char *)"on"};intLevelNames34,996
+static char *intTypeNames[] = {intTypeNames35,1059
+Interrupt::Interrupt()Interrupt45,1466
+Interrupt::setNeedResched()setNeedResched61,1918
+Interrupt::~Interrupt()~Interrupt71,2218
+Interrupt::ChangeLevel(IntStatus now)ChangeLevel88,2680
+Interrupt::SetLevel(IntStatus now)SetLevel107,3235
+Interrupt::Enable()Enable135,4492
+Interrupt::OneTick()OneTick153,5153
+Interrupt::YieldOnReturn()YieldOnReturn217,7149
+Interrupt::Idle()Idle236,7768
+Interrupt::Halt()Halt272,9208
+Interrupt::Schedule(VoidFunctionPtr handler, size_t arg, unsigned int fromNow,Schedule300,10161
+Interrupt::HandleIfDue(bool advanceClock)HandleIfDue332,11238
+interruptOrder (void *int1, void *int2)interruptOrder396,13515
+PrintPending(size_t arg)PrintPending408,13910
+Interrupt::DumpState()DumpState423,14373
+
+machine/translate.cc,1033
+Machine::ReadMem(int addr, int size, void *value)ReadMem53,1980
+Machine::WriteMem(int addr, int size, int value)WriteMem117,3814
+Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)Translate178,5831
+TranslationEntry::TranslationEntry()TranslationEntry276,9668
+void TranslationEntry::clearSC () {clearSC308,10484
+void TranslationEntry::clearRefHistory () {clearRefHistory320,10860
+void TranslationEntry::setTime (unsigned int theTime) {setTime333,11254
+unsigned int TranslationEntry::getTime () {getTime346,11649
+void TranslationEntry::setReference()setReference361,12073
+bool TranslationEntry::wasReferenced()wasReferenced371,12394
+void TranslationEntry::shiftReferenceHistory()shiftReferenceHistory382,12774
+bool TranslationEntry::usedLessRecentlyThan( const TranslationEntry &other )usedLessRecentlyThan395,13239
+bool TranslationEntry::arrivedEarlierThan( const TranslationEntry &other )arrivedEarlierThan417,13921
+void TranslationEntry::grantSecondChance()grantSecondChance429,14375
+
+machine/breakpoint.cc,336
+BreakpointSet::findAddr(const int address) {findAddr21,703
+BreakpointSet::addBreakpoint(const int address, const int length,addBreakpoint50,1350
+BreakpointSet::removeBreakpoint(const int address, const int length,removeBreakpoint81,2216
+BreakpointSet::queryBreakpoint(const int address, const int length,queryBreakpoint103,2925
+
+machine/interrupt.h,2230
+#define _MACHINE_INTERRUPT_H_MACHINE_INTERRUPT_H44,1838
+enum IntStatus { IntOff, IntOn };IntStatus53,2029
+enum IntStatus { IntOff, IntOn };IntOff53,2029
+enum IntStatus { IntOff, IntOn };IntOn53,2029
+enum MachineStatus {IdleMode, SystemMode, UserMode};MachineStatus58,2224
+enum MachineStatus {IdleMode, SystemMode, UserMode};IdleMode58,2224
+enum MachineStatus {IdleMode, SystemMode, UserMode};SystemMode58,2224
+enum MachineStatus {IdleMode, SystemMode, UserMode};UserMode58,2224
+enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, IntType63,2451
+enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, TimerInt63,2451
+enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, DiskInt63,2451
+enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, ConsoleWriteInt63,2451
+enum IntType { TimerInt, DiskInt, ConsoleWriteInt, ConsoleReadInt, ConsoleReadInt63,2451
+	       NetworkSendInt, NetworkRecvInt};NetworkSendInt64,2519
+	       NetworkSendInt, NetworkRecvInt};NetworkRecvInt64,2519
+struct PendingInterrupt {PendingInterrupt70,2734
+  VoidFunctionPtr handler;	// The function (in the hardware devicehandler71,2760
+  size_t arg;			// The argument to the function.arg73,2878
+  unsigned int when;		// When the interrupt is supposed to firewhen74,2927
+  IntType type;			// for debuggingtype75,2991
+  PendingInterrupt(VoidFunctionPtr func, size_t param, unsigned int time,PendingInterrupt82,3335
+class Interrupt {Interrupt95,3820
+  IntStatus getLevel() {return level;}	// Return whether interruptsgetLevel104,4105
+  MachineStatus getStatus() { return status; } // idle, kernel, usergetStatus116,4470
+  void setStatus(MachineStatus st) { status = st; }setStatus117,4539
+  IntStatus level;		// are interrupts enabled or disabled?level136,5201
+  SortedList pending;		// the list of interrupts scheduledpending137,5260
+  bool inHandler;		// true if we are running an interrupt handlerinHandler139,5349
+  bool yieldOnReturn;		// true if we are to context switchyieldOnReturn140,5415
+  MachineStatus status;		// idle, kernel mode, user modestatus142,5518
+  bool needResched;		// true if we need to run the schedulerneedResched143,5575
+
+machine/stats.cc,128
+Statistics::Statistics()Statistics24,760
+Statistics::Print()Print51,1657
+Statistics::ShortPrint(int pid)ShortPrint80,2755
+
+machine/translate.h,1215
+#define TRANSLATE_HTRANSLATE_H19,710
+class TranslationEntry {TranslationEntry33,1160
+    unsigned int virtualPage;  	// The page number in virtual memory.virtualPage39,1250
+    unsigned int physicalPage;  // The page number in real memory (relativephysicalPage40,1320
+    bool valid;         // Unless this bit is set, the translation isvalid43,1461
+    bool readOnly;	// If this bit is set, the user program is not allowedreadOnly46,1620
+    bool use;           // This bit is set by the hardware every time theuse48,1736
+    bool dirty;         // This bit is set by the hardware every time thedirty50,1848
+    OpenFile* File;     // This is the file where the page can be foundFile53,1966
+    size_t offset;      // this is the offset within the file offset54,2038
+    bool zero;          // do we zero out the page ( for uninit/stack ) datazero56,2153
+    bool cow;           // copy-on-write; do we need to copy the pagecow58,2231
+    unsigned char deltaMask;	// this byte is used to set the windowdeltaMask63,2367
+    unsigned char history;	// this byte is used to track the pagehistory65,2478
+    unsigned int arrivalTime;	// when this page was put in a framearrivalTime75,2740
+
+machine/breakpoint.h,1053
+#define _MACHINE_BREAKPOINT_H_MACHINE_BREAKPOINT_H6,161
+enum BreakpointType {BreakpointType13,300
+  SoftwareBp,	// Software breakpoint; munge the codeSoftwareBp14,322
+  HardwareBp,	// Hardware breakpointHardwareBp15,375
+  WriteWp,	// Write watchpointWriteWp16,412
+  ReadWp,	// Read watchpointReadWp17,443
+  AccessWp	// Access watchpointAccessWp18,472
+struct Breakpoint {Breakpoint21,508
+  int start;			// Start location of the breakpointstart22,528
+  int end;			// End location of the breakpointend23,579
+  enum BreakpointType type;	// What kind of break/watchpoint?type24,626
+#define BP_SET_INIT BP_SET_INIT27,692
+#define BP_SET_INC BP_SET_INC28,715
+class BreakpointSet {BreakpointSet31,783
+  Breakpoint *set;	// The set of Breakpoint objectsset33,815
+  int size;		// The size of the arraysize34,867
+  int count;		// The number of entries in the arraycount35,905
+  BreakpointSet() : set(new Breakpoint[BP_SET_INIT]), size(BP_SET_INIT),BreakpointSet40,1003
+  ~BreakpointSet() { delete[] set; }~BreakpointSet43,1096
+
+machine/stats.h,2113
+#define STATS_HSTATS_H12,385
+class Statistics {Statistics25,728
+    unsigned int totalTicks;   	// Total time running NachostotalTicks27,757
+    unsigned int idleTicks;    	// Time spent idle (no threads to run)idleTicks28,818
+    unsigned int systemTicks;	// Time spent executing system codesystemTicks29,889
+    unsigned int userTicks;    	// Time spent executing user codeuserTicks30,955
+    unsigned int numContextSwitches;     // number of context switchesnumContextSwitches34,1092
+    unsigned int numVolContextSwitches;  // number of voluntary context switchesnumVolContextSwitches35,1163
+    unsigned int numInvolContextSwitches;// number of invol. context switchesnumInvolContextSwitches36,1244
+    unsigned int numDiskReads;		 // number of disk read requestsnumDiskReads38,1323
+    unsigned int numDiskWrites;		 // number of disk write requestsnumDiskWrites39,1388
+    unsigned int numConsoleCharsRead;	 // number of characters read from the numConsoleCharsRead40,1455
+    unsigned int numConsoleCharsWritten; // number of characters written to numConsoleCharsWritten42,1586
+    unsigned int numPageFaults;		 // number of virtual memory page numPageFaults44,1719
+    unsigned int numPageIns;             // number of virtual memory pageinsnumPageIns46,1838
+    unsigned int numPageOuts;            // number of virtual memory pageoutsnumPageOuts47,1915
+    unsigned int numPacketsSent;	 // number of packets sent over the numPacketsSent48,1993
+    unsigned int numPacketsRecvd;	 // number of packets received over numPacketsRecvd50,2115
+    unsigned int numThreadSamples;	// number of times the instrumentation interrupt firednumThreadSamples59,2420
+    Histogram interPageFaultTimes; // histogram of times elapsed between page faultsinterPageFaultTimes63,2557
+    unsigned int ticksAtLastPageFault;ticksAtLastPageFault64,2642
+#define UserTick	UserTick79,3164
+#define SystemTick SystemTick80,3228
+#define RotationTime RotationTime81,3297
+#define SeekTime SeekTime82,3365
+#define ConsoleTime ConsoleTime83,3434
+#define NetworkTime NetworkTime84,3499
+
+machine/console.cc,706
+struct console_write_request {console_write_request23,777
+  Console *console;console24,808
+  char character;character25,828
+  int fd;fd26,846
+static void ConsoleReadPoll(size_t c) ConsoleReadPoll30,935
+static void ConsoleFinishWrite(size_t c)ConsoleFinishWrite32,1044
+int ConsoleRead(char *buf, int nbytes) {ConsoleRead55,1687
+int ConsoleWrite(char *buf, int nbytes) {ConsoleWrite88,2367
+Console::Console(char *readFile, char *writeFile, VoidFunctionPtr readAvail, Console119,3351
+Console::~Console()~Console148,4259
+Console::CheckCharAvail()CheckCharAvail168,4923
+Console::WriteDone()WriteDone198,5858
+Console::GetChar()GetChar216,6358
+Console::PutChar(char ch)PutChar231,6732
+
+machine/console.h,675
+#define CONSOLE_HCONSOLE_H24,1027
+#define FLAG_EOF FLAG_EOF32,1149
+class Console {Console48,1874
+    int readFileNo;			// UNIX file emulating the keyboard readFileNo71,2785
+    int writeFileNo;			// UNIX file emulating the displaywriteFileNo72,2844
+    VoidFunctionPtr writeHandler; 	// Interrupt handler to call when writeHandler73,2902
+    VoidFunctionPtr readHandler; 	// Interrupt handler to call when readHandler75,3006
+    size_t handlerArg;			// argument to be passed to the handlerArg77,3121
+    bool putBusy;    			// Is a PutChar operation in progress?putBusy79,3206
+    char incoming;    			// Contains the character to be read,incoming81,3310
+
+machine/machine.cc,472
+static char* exceptionNames[] = { (char *)"no exception", (char *)"syscall", exceptionNames18,592
+void CheckEndian()CheckEndian35,1257
+Machine::Machine(bool debug)Machine62,1921
+Machine::~Machine()~Machine95,2719
+Machine::RaiseException(ExceptionType which, int badVAddr)RaiseException113,3296
+Machine::DumpState()DumpState135,4048
+int Machine::ReadRegister(int num)ReadRegister173,5145
+void Machine::WriteRegister(int num, int value)WriteRegister179,5262
+
+machine/machine.h,2893
+#define MACHINE_HMACHINE_H22,877
+#define PageSize PageSize39,1282
+#define NumPhysPages NumPhysPages43,1396
+#define MemorySize MemorySize44,1424
+#define TLBSize	TLBSize45,1470
+enum ExceptionType { NoException,           // Everything ok!ExceptionType47,1527
+enum ExceptionType { NoException,           // Everything ok!NoException47,1527
+		     SyscallException,      // A program executed a system call.SyscallException48,1589
+		     PageFaultException,    // No valid translation foundPageFaultException49,1656
+		     ReadOnlyException,     // Write attempted to page marked ReadOnlyException50,1716
+		     BusErrorException,     // Translation resulted in an BusErrorException52,1805
+		     AddressErrorException, // Unaligned reference or one thatAddressErrorException54,1903
+		     OverflowException,     // Integer overflow in add or sub.OverflowException57,2032
+		     IllegalInstrException, // Unimplemented or reserved instr.IllegalInstrException58,2097
+		     BreakpointException,   // Breakpoint encountered.BreakpointException60,2200
+		     OutOfMemory,	    // We dont have enough memory.OutOfMemory62,2264
+		     NumExceptionTypesNumExceptionTypes64,2327
+#define BREAKPOINT(BREAKPOINT68,2393
+#define StackReg	StackReg76,2716
+#define RetAddrReg	RetAddrReg77,2760
+#define NumGPRegs	NumGPRegs79,2827
+#define HiReg	HiReg81,2889
+#define LoReg	LoReg82,2950
+#define PCReg	PCReg83,2968
+#define NextPCReg	NextPCReg84,3013
+#define PrevPCReg	PrevPCReg85,3078
+#define LoadReg	LoadReg86,3143
+#define LoadValueReg LoadValueReg87,3205
+#define BadVAddrReg	BadVAddrReg88,3275
+#define NumTotalRegs NumTotalRegs90,3346
+class Instruction {Instruction99,3579
+    int opCode;      // Type of instruction.  This is NOT the same as theopCode104,3709
+    int rs, rt, rd;  // Three registers from instruction.rs106,3851
+    int rs, rt, rd;  // Three registers from instruction.rt106,3851
+    int rs, rt, rd;  // Three registers from instruction.rd106,3851
+    int extra;       // Immediate or target or shamt field or offset.extra107,3909
+class Machine {Machine124,4668
+    char *mainMemory;		// physical memory to store user program,mainMemory171,6467
+    int registers[NumTotalRegs]; // CPU registers, for executing user programsregisters173,6570
+    TranslationEntry *tlb;		// this pointer should be considered tlb194,7630
+    TranslationEntry *pageTable;pageTable197,7739
+    unsigned int pageTableSize;pageTableSize198,7772
+    bool singleStep;		// drop back into the debugger after eachsingleStep201,7842
+    BreakpointSet breakpoints;breakpoints203,7935
+#define WordToHost(WordToHost228,8621
+#define ShortToHost(ShortToHost234,8924
+#define WordToHost(WordToHost239,9100
+#define ShortToHost(ShortToHost240,9132
+#define WordToMachine(WordToMachine243,9198
+#define ShortToMachine(ShortToMachine244,9247
+
+machine/sysdep.cc,1439
+PollFile(int fd)PollFile121,3892
+OpenForWrite(char *name)OpenForWrite156,4988
+OpenForReadWrite(char *name, bool crashOnError)OpenForReadWrite173,5409
+Read(int fd, void *buffer, size_t nBytes)Read187,5773
+Write(int fd, void *buffer, size_t nBytes)Write199,6138
+ReadPartial(int fd, void *buffer, size_t nBytes)ReadPartial213,6528
+WriteFile(int fd, void *buffer, size_t nBytes)WriteFile225,6844
+Lseek(int fd, int offset, int whence)Lseek241,7285
+Tell(int fd)Tell253,7610
+Close(int fd)Close269,7956
+Unlink(char *name)Unlink281,8211
+OpenSocket()OpenSocket294,8618
+CloseSocket(int sockID)CloseSocket310,8945
+InitSocketName(struct sockaddr_un *uname, char *name)InitSocketName321,9227
+AssignNameToSocket(char *socketName, int sockID)AssignNameToSocket334,9625
+DeAssignNameToSocket(char *socketName)DeAssignNameToSocket352,10262
+PollSocket(int sockID)PollSocket363,10582
+ReadFromSocket(int sockID, void *buffer, int packetSize)ReadFromSocket373,10915
+SendToSocket(int sockID, const void *buffer, int packetSize, char *toName)SendToSocket395,11583
+CallOnUserAbort(VoidNoArgFunctionPtr func)CallOnUserAbort414,12136
+Delay(int seconds)Delay428,12608
+Abort()Abort439,12856
+Exit(int exitCode)Exit450,13075
+RandomInit(unsigned seed)RandomInit462,13416
+Random()Random473,13661
+AllocBoundedArray(int size)AllocBoundedArray491,14200
+DeallocBoundedArray(char *ptr, int size)DeallocBoundedArray510,14765
+
+machine/sysdep.h,33
+#define SYSDEP_HSYSDEP_H12,482
+
+machine/timer.cc,265
+static void TimerHandler(size_t arg)TimerHandler34,1244
+Timer::Timer(VoidFunctionPtr timerHandler, size_t callArg, size_t duration, bool doRandom)Timer54,1992
+Timer::TimerExpired() TimerExpired73,2662
+Timer::TimeOfNextInterrupt() TimeOfNextInterrupt90,3220
+
+machine/mipssim.cc,427
+Machine::Fix_Fork_Registers() {Fix_Fork_Registers33,1091
+Machine::Run()Run62,2246
+TypeToReg(RegType reg, Instruction *instr)TypeToReg102,3453
+Machine::OneInstruction(Instruction *instr)OneInstruction142,4924
+Machine::DelayedLoad(int nextReg, int nextValue)DelayedLoad651,18027
+Instruction::Decode(unsigned int binary_instr)Decode667,18571
+Mult(int a, int b, bool signedArith, int* hiPtr, int* loPtr)Mult715,19851
+
+machine/timer.h,379
+#define TIMER_HTIMER_H22,844
+class Timer {Timer30,993
+    ~Timer() {}~Timer36,1256
+    bool randomize;		// set if we need to use a random timeout delayrandomize47,1554
+    VoidFunctionPtr handler;	// timer interrupt handler handler48,1623
+    int arg;			// argument to pass to interrupt handlerarg49,1680
+    size_t period;		// time between interruptsperiod50,1736
+
+machine/mipssim.h,3071
+#define MIPSSIM_HMIPSSIM_H11,364
+#define OP_ADD	OP_ADD33,917
+#define OP_ADDI	OP_ADDI34,935
+#define OP_ADDIU	OP_ADDIU35,954
+#define OP_ADDU	OP_ADDU36,973
+#define OP_AND	OP_AND37,992
+#define OP_ANDI	OP_ANDI38,1010
+#define OP_BEQ	OP_BEQ39,1029
+#define OP_BGEZ	OP_BGEZ40,1047
+#define OP_BGEZAL	OP_BGEZAL41,1066
+#define OP_BGTZ	OP_BGTZ42,1086
+#define OP_BLEZ	OP_BLEZ43,1106
+#define OP_BLTZ	OP_BLTZ44,1126
+#define OP_BLTZAL	OP_BLTZAL45,1146
+#define OP_BNE	OP_BNE46,1167
+#define OP_BREAK OP_BREAK48,1223
+#define OP_DIV	OP_DIV50,1257
+#define OP_DIVU	OP_DIVU51,1276
+#define OP_J	OP_J52,1296
+#define OP_JAL	OP_JAL53,1313
+#define OP_JALR	OP_JALR54,1332
+#define OP_JR	OP_JR55,1352
+#define OP_LB	OP_LB56,1370
+#define OP_LBU	OP_LBU57,1388
+#define OP_LH	OP_LH58,1407
+#define OP_LHU	OP_LHU59,1425
+#define OP_LUI	OP_LUI60,1444
+#define OP_LW	OP_LW61,1463
+#define OP_LWL	OP_LWL62,1481
+#define OP_LWR	OP_LWR63,1500
+#define OP_MFHI	OP_MFHI65,1520
+#define OP_MFLO	OP_MFLO66,1540
+#define OP_MTHI	OP_MTHI68,1561
+#define OP_MTLO	OP_MTLO69,1581
+#define OP_MULT	OP_MULT70,1601
+#define OP_MULTU	OP_MULTU71,1621
+#define OP_NOR	OP_NOR72,1641
+#define OP_OR	OP_OR73,1660
+#define OP_ORI	OP_ORI74,1678
+#define OP_RFE	OP_RFE75,1697
+#define OP_SB	OP_SB76,1716
+#define OP_SH	OP_SH77,1734
+#define OP_SLL	OP_SLL78,1752
+#define OP_SLLV	OP_SLLV79,1771
+#define OP_SLT	OP_SLT80,1791
+#define OP_SLTI	OP_SLTI81,1810
+#define OP_SLTIU	OP_SLTIU82,1830
+#define OP_SLTU	OP_SLTU83,1850
+#define OP_SRA	OP_SRA84,1870
+#define OP_SRAV	OP_SRAV85,1889
+#define OP_SRL	OP_SRL86,1909
+#define OP_SRLV	OP_SRLV87,1928
+#define OP_SUB	OP_SUB88,1948
+#define OP_SUBU	OP_SUBU89,1967
+#define OP_SW	OP_SW90,1987
+#define OP_SWL	OP_SWL91,2005
+#define OP_SWR	OP_SWR92,2024
+#define OP_XOR	OP_XOR93,2043
+#define OP_XORI	OP_XORI94,2062
+#define OP_SYSCALL	OP_SYSCALL95,2082
+#define OP_UNIMP	OP_UNIMP96,2104
+#define OP_RES	OP_RES97,2124
+#define MaxOpcode	MaxOpcode98,2143
+#define IndexToAddr(IndexToAddr106,2294
+#define SIGN_BIT	SIGN_BIT108,2329
+#define R31	R31109,2357
+#define SPECIAL SPECIAL117,2573
+#define BCOND	BCOND118,2593
+#define IFMT IFMT121,2655
+#define JFMT JFMT122,2691
+#define RFMT RFMT123,2724
+struct OpInfo {OpInfo125,2759
+    int opCode;		/* Translated op code. */opCode126,2775
+    int format;		/* Format type (IFMT or JFMT or RFMT) */format127,2818
+static OpInfo opTable[] = {opTable130,2880
+static int specialTable[] = {specialTable154,4154
+enum RegType { NONE, RS, RT, RD, EXTRA }; RegType177,5112
+enum RegType { NONE, RS, RT, RD, EXTRA }; NONE177,5112
+enum RegType { NONE, RS, RT, RD, EXTRA }; RS177,5112
+enum RegType { NONE, RS, RT, RD, EXTRA }; RT177,5112
+enum RegType { NONE, RS, RT, RD, EXTRA }; RD177,5112
+enum RegType { NONE, RS, RT, RD, EXTRA }; EXTRA177,5112
+struct OpString {OpString179,5156
+    char *string;	// Printed version of instructionstring180,5174
+    RegType args[3];args181,5226
+static struct OpString opStrings[] = {opStrings184,5251
+
+machine/network.cc,424
+static void NetworkReadPoll(size_t arg)NetworkReadPoll17,563
+static void NetworkSendDone(size_t arg)NetworkSendDone19,660
+Network::Network(NetworkAddress addr, double reliability,Network26,968
+Network::~Network()~Network50,1750
+Network::CheckPktAvail()CheckPktAvail60,2009
+Network::SendDone()SendDone90,2976
+Network::Send(PacketHeader hdr, char* data)Send103,3350
+Network::Receive(char* data)Receive131,4206
+
+machine/disk.cc,819
+#define MagicNumber MagicNumber25,949
+#define MagicSize MagicSize26,981
+#define DiskSize DiskSize28,1013
+static void DiskDone(size_t arg) { ((Disk *)arg)->HandleInterrupt(); }DiskDone31,1144
+Disk::Disk(char* name, VoidFunctionPtr callWhenDone, size_t callArg)Disk45,1776
+Disk::~Disk()~Disk81,2883
+PrintSector (bool writing, int sector, char *data)PrintSector92,3164
+Disk::ReadRequest(int sectorNumber, char* data)ReadRequest121,4139
+Disk::WriteRequest(int sectorNumber, char* data)WriteRequest141,4728
+Disk::HandleInterrupt ()HandleInterrupt167,5613
+Disk::TimeToSeek(int newSector, int *rotation) TimeToSeek185,6271
+Disk::ModuloDiff(int to, int from)ModuloDiff208,7069
+Disk::ComputeLatency(int newSector, bool writing)ComputeLatency238,8285
+Disk::UpdateLast(int newSector)UpdateLast268,9348
+
+lib/strcat.c,101
+char *strcat (char *s1, const char *s2) {strcat1,0
+int main (int argc, char *argv[]) {main17,187
+
+lib/strstr.c,108
+char *strstr (const char *s1, const char *s2) {strstr3,21
+int main (int argc, char *argv[]) {main26,351
+
+lib/strncpy.c,114
+char *strncpy (char *s1, const char *s2, size_t n) {strncpy3,21
+int main (int argc, char *argv[]) {main21,309
+
+lib/gets.c,147
+#define ConsoleInput ConsoleInput2,13
+#define Read Read3,39
+char *gets (char *s) {gets9,107
+int main (int argc, char *argv[]) { main28,355
+
+lib/strchr.c,98
+char *strchr (const char *s, int n) {strchr3,21
+int main (int argc, char *argv[]) {main14,188
+
+lib/strlen.c,94
+size_t strlen (const char *ptr) {strlen3,21
+int main (int argc, char *argv[]) {main13,140
+
+lib/strcmp.c,105
+int strcmp (const char *s1, const char *s2) {strcmp1,0
+int main (int argc, char *argv[]) {main11,148
+
+lib/memchr.c,101
+void *memchr (void *src, int c, int n) {memchr3,21
+int main (int argc, char *argv[]) {main18,229
+
+lib/perror.h,83
+char perror_buffer[80];perror_buffer11,414
+void perror (char *s) {perror14,457
+
+lib/strncat.c,114
+char *strncat (char *s1, const char *s2, size_t n) {strncat3,21
+int main (int argc, char *argv[]) {main21,266
+
+lib/strcpy.c,101
+char *strcpy (char *s1, const char *s2) {strcpy1,0
+int main (int argc, char *argv[]) {main12,150
+
+lib/stdlib.h,118
+#define STDLIB_HSTDLIB_H2,17
+#define NULL NULL4,35
+#define EOF EOF5,59
+typedef unsigned int size_t;size_t7,78
+
+lib/strncmp.c,118
+int strncmp (const char *s1, const char *s2, size_t n) {strncmp3,21
+int main (int argc, char *argv[]) {main16,229
+
+lib/strrchr.c,103
+char *strrchr (const char *orig, int n) {strrchr3,21
+int main (int argc, char *argv[]) {main18,249
+
+lib/memcpy.c,115
+void *memcpy (void *dest, void *src, unsigned int n) {memcpy3,21
+int main (int argc, char *argv[]) {main15,201
+
+lib/memset.c,111
+void *memset (void *dest, int c, unsigned int n) {memset3,21
+int main (int argc, char *argv[]) {main14,165
+
+lib/itoa.c,94
+char *itoa (int num, char *buffer) {itoa1,0
+int main (int argc, char *argv[]) {main27,500
+
+lib/atoi.c,84
+int atoi (const char *s) {atoi1,0
+int main (int argc, char *argv[]) {main34,437
+
+lib/Makefile,514
+GCCDIR = /usr/local/nachos/bin/GCCDIR8,215
+LDFLAGS = # -T script -NLDFLAGS9,247
+ASFLAGS = # -mipsASFLAGS10,272
+CPPFLAGS = $(INCDIR)CPPFLAGS11,290
+CC = $(GCCDIR)mipsel-elf-gccCC19,415
+AS = $(GCCDIR)mipsel-elf-asAS20,444
+LD = $(GCCDIR)mipsel-elf-ldLD21,472
+RANLIB = $(GCCDIR)mipsel-elf-ranlibRANLIB22,500
+INCDIR =-I../userprog -I../threadsINCDIR24,537
+CFLAGS = -fno-builtin -nostdinc $(INCDIR)CFLAGS25,572
+OBJ = strlen.o itoa.o strcat.o strcpy.o strcmp.o strncmp.o strcat.o strncmp.o\OBJ27,615
+
+userprog/exception.cc,63
+ExceptionHandler(ExceptionType which)ExceptionHandler56,1818
+
+userprog/nerrno.h,215
+#define __NERRNO_H__NERRNO_H12,316
+#define ENOENT ENOENT14,336
+#define EBADF EBADF15,353
+#define ECHILD ECHILD16,370
+#define EAGAIN EAGAIN17,388
+#define ENOMEM ENOMEM18,406
+#define EMFILE EMFILE19,424
+
+userprog/progtest.cc,319
+StartProcess(char *filename)StartProcess25,759
+static KernelSemaphore *readAvail;readAvail52,1582
+static KernelSemaphore *writeDone;writeDone53,1617
+static void ReadAvail(size_t arg) { ReadAvail60,1875
+static void WriteDone(size_t arg) { WriteDone64,2007
+ConsoleTest (char *in, char *out)ConsoleTest76,2423
+
+userprog/syscallnumbers.h,960
+#define SC_Halt SC_Halt8,125
+#define SC_Exit SC_Exit9,151
+#define SC_Exec SC_Exec10,177
+#define SC_Wait SC_Wait11,203
+#define SC_Create SC_Create12,229
+#define SC_Open SC_Open13,255
+#define SC_Read SC_Read14,281
+#define SC_Write SC_Write15,307
+#define SC_Close SC_Close16,333
+#define SC_Fork SC_Fork17,359
+#define SC_Yield SC_Yield18,385
+#define SC_Unlink SC_Unlink19,412
+#define SC_GetPID SC_GetPID20,439
+#define SC_GetPPID SC_GetPPID21,466
+#define SC_Nice SC_Nice22,493
+#define SC_Echo SC_Echo25,535
+#define SC_NachosUserEvent SC_NachosUserEvent29,597
+#define SC_BlockAttach SC_BlockAttach33,675
+#define SC_BlockDetach SC_BlockDetach34,706
+#define SC_PBlock SC_PBlock35,737
+#define SC_VBlock SC_VBlock36,768
+#define SC_QueueAttach SC_QueueAttach37,799
+#define SC_QueueDetach SC_QueueDetach38,830
+#define SC_PQueue SC_PQueue39,861
+#define SC_VQueue SC_VQueue40,892
+#define SC_NameThread SC_NameThread43,974
+
+userprog/start.s,51
+#define IN_ASMIN_ASM11,389
+_start:_start27,833
+
+userprog/bitmap.cc,397
+BitMap::BitMap(int nitems) BitMap22,770
+BitMap::~BitMap()~BitMap36,1162
+BitMap::Mark(int which) Mark49,1454
+BitMap::Clear(int which) Clear63,1851
+BitMap::Test(int which)Test77,2249
+BitMap::Find() Find93,2749
+BitMap::NumClear() NumClear110,3147
+BitMap::Print() Print128,3608
+BitMap::FetchFrom(OpenFile *file) FetchFrom149,4111
+BitMap::WriteBack(OpenFile *file)WriteBack162,4481
+
+userprog/syscall.h,207
+#define SYSCALLS_HSYSCALLS_H14,493
+typedef int SpaceId;	SpaceId44,1461
+typedef int OpenFileId;	OpenFileId67,2165
+#define ConsoleInput	ConsoleInput75,2435
+#define ConsoleOutput	ConsoleOutput76,2460
+
+userprog/bitmap.h,332
+#define BITMAP_HBITMAP_H16,550
+#define BitsInByte BitsInByte25,758
+#define BitsInWord BitsInWord26,780
+class BitMap {BitMap36,1148
+    int numBits;			// number of bits in the bitmapnumBits59,2003
+    int numWords;			// number of words of bitmap storagenumWords60,2054
+    unsigned int *map;			// bit storagemap64,2211
+
+userprog/systemcall.cc,1912
+void do_system_call(int syscall_num) {do_system_call30,858
+int System_Create (char *user_space_filename) {System_Create140,3690
+int System_Open (char *user_space_filename) {System_Open159,3995
+int System_Read (int from_fd, char* to_user_space, int num_to_read) {System_Read200,5115
+int System_Write (int to_fd, char * from_user_space, int num_to_write) {System_Write257,6722
+int System_Close (int fd) {System_Close311,7873
+int System_Unlink (char *user_space_filename) {System_Unlink337,8236
+void System_Halt() {System_Halt359,8709
+void System_Exit (int exitvalue) {System_Exit367,8907
+int System_Wait (int *exitvalue) {System_Wait411,9931
+int System_Exec (char * user_space_filename) {System_Exec465,11495
+int System_Fork( ) {System_Fork501,12529
+void System_Yield() {System_Yield557,14402
+int System_GetPID (void) {System_GetPID564,14590
+int System_GetPPID (void) {System_GetPPID571,14794
+int copy_from_user( char * from_user_space, char * to_k_space ) {copy_from_user586,15210
+void Do_Fork(size_t dummy) {Do_Fork614,16063
+void System_Nice (int inc) {System_Nice637,16838
+int System_BlockAttach(char *user_space_semname) System_BlockAttach653,17279
+int System_BlockDetach(char *user_space_semname) System_BlockDetach702,18454
+int System_PBlock(int handle) System_PBlock744,19432
+int System_VBlock(int handle) System_VBlock795,20863
+int System_QueueAttach(char *user_space_semname) System_QueueAttach834,21887
+int System_QueueDetach(char *user_space_semname) System_QueueDetach883,23025
+int System_PQueue(int handle) System_PQueue925,23993
+int System_VQueue(int handle) System_VQueue976,25321
+int System_NameThread(char *user_space_thread_name)System_NameThread1018,26413
+void System_NachosUserEvent(char *u_family, char *u_name, int tag)System_NachosUserEvent1050,27225
+int System_Echo (char * from_user_space, int num_to_write) {System_Echo1087,28290
+
+userprog/Systemcalls.s,2378
+#define IN_ASMIN_ASM9,237
+Halt:Halt31,895
+$HaltPos:$HaltPos39,1000
+$HaltDone:	j	$31$HaltDone41,1023
+Exit:Exit46,1076
+$ExitPos:$ExitPos54,1181
+$ExitDone:	j	$31$ExitDone56,1204
+Exec:Exec61,1257
+$ExecPos:$ExecPos73,1567
+$ExecDone:$ExecDone76,1652
+Wait:Wait82,1706
+$WaitPos:$WaitPos90,1811
+$WaitDone:$WaitDone92,1834
+Create:Create98,1892
+$CreatePos:$CreatePos106,2005
+$CreateDone:$CreateDone108,2030
+Open:Open114,2088
+$OpenPos:$OpenPos122,2193
+$OpenDone:$OpenDone124,2216
+Read:Read130,2270
+$ReadPos:$ReadPos138,2375
+$ReadDone:$ReadDone140,2398
+Write:Write146,2454
+$WritePos:$WritePos154,2563
+$WriteDone:$WriteDone156,2587
+Close:Close162,2645
+$ClosePos:$ClosePos170,2754
+$CloseDone:$CloseDone172,2778
+Fork:Fork178,2834
+$ForkPos:$ForkPos186,2939
+$ForkDone:$ForkDone188,2962
+Yield:Yield194,3018
+$YieldPos:$YieldPos202,3127
+$YieldDone:$YieldDone204,3151
+GetPID:GetPID210,3228
+$GetPIDPos:$GetPIDPos218,3412
+$GetPIDDone:$GetPIDDone220,3449
+GetPPID:GetPPID226,3550
+$GetPPIDPos:$GetPPIDPos234,3738
+$GetPPIDDone:$GetPPIDDone236,3776
+Nice:Nice242,3872
+$NicePos:$NicePos250,4048
+$NiceDone:$NiceDone252,4083
+BlockAttach:BlockAttach259,4195
+$BlockAttachPos:$BlockAttachPos267,4328
+$BlockAttachDone:$BlockAttachDone269,4358
+BlockDetach:BlockDetach275,4440
+$BlockDetachPos:$BlockDetachPos283,4573
+$BlockDetachDone:$BlockDetachDone285,4603
+PBlock:PBlock291,4675
+$PBlockPos:$PBlockPos299,4788
+$PBlockDone:$PBlockDone301,4813
+VBlock:VBlock307,4875
+$VBlockPos:$VBlockPos315,4988
+$VBlockDone:$VBlockDone317,5013
+QueueAttach:QueueAttach323,5086
+$QueueAttachPos:$QueueAttachPos331,5219
+$QueueAttachDone:$QueueAttachDone333,5249
+QueueDetach:QueueDetach339,5331
+$QueueDetachPos:$QueueDetachPos347,5464
+$QueueDetachDone:$QueueDetachDone349,5494
+PQueue:PQueue355,5566
+$PQueuePos:$PQueuePos363,5679
+$PQueueDone:$PQueueDone365,5704
+VQueue:VQueue371,5766
+$VQueuePos:$VQueuePos379,5879
+$VQueueDone:$VQueueDone381,5904
+NameThread:NameThread389,6025
+$NameThreadPos:$NameThreadPos397,6154
+$NameThreadDone:$NameThreadDone399,6183
+NachosUserEvent:NachosUserEvent409,6370
+$NachosUserEventPos:$NachosUserEventPos417,6590
+$NachosUserEventDone:$NachosUserEventDone419,6636
+Echo:Echo430,6809
+$EchoPos:$EchoPos438,6914
+$EchoDone:$EchoDone440,6937
+__main:__main448,7073
+
+userprog/swapmgr.cc,480
+char *SwapFileName = (char *)"swapfile";SwapFileName17,348
+SwapManager::SwapManager() {SwapManager19,390
+SwapManager::~SwapManager() {~SwapManager37,821
+int SwapManager::get_next_free_frame() {get_next_free_frame44,906
+void SwapManager::release_frame(size_t offset, AddrSpace *addrspace) {release_frame64,1323
+Frame * SwapManager::get_frame( size_t offset ) {get_frame95,2111
+int SwapManager::add_frame_owner( size_t offset, Thread * thread, add_frame_owner105,2324
+
+userprog/systemcall.h,41
+#define __SYSTEM_CALL__SYSTEM_CALL7,89
+
+userprog/swapmgr.h,377
+#define __SWAPMGR_H__SWAPMGR_H13,404
+#define NumSwapPages NumSwapPages21,527
+class SwapManager {SwapManager47,1318
+  OpenFile *file () {file57,1746
+  int getNumOwners (int number) {getNumOwners60,1793
+  BitMap *frame_flags;frame_flags68,1952
+  OpenFile *swapFile;swapFile69,1975
+  Frame Frames[NumSwapPages];  // array of information on each frameFrames70,1997
+
+userprog/memmgr.cc,735
+MemoryManager::MemoryManager() {MemoryManager16,325
+MemoryManager::~MemoryManager() {~MemoryManager28,610
+int MemoryManager::get_next_free_page() {get_next_free_page34,674
+void MemoryManager::release_page(int page_num, AddrSpace *addrspace) {release_page61,1251
+Frame * MemoryManager::get_frame( int number ) {get_frame106,2263
+int MemoryManager::add_frame_owner( int frame_number, Thread * thread, add_frame_owner123,2741
+void MemoryManager::pagein( int page_number, AddrSpace * addrspace ) {pagein197,4884
+void MemoryManager::pageout( int victim ) {pageout301,8148
+int MemoryManager::Choose_Victim (int notMe) {Choose_Victim419,11785
+int MemoryManager::Dumb_Choose_Victim (int notMe) {Dumb_Choose_Victim440,12436
+
+userprog/addrspace.cc,1944
+#define SWAPSHORT(SWAPSHORT26,867
+#define SWAPWORD(SWAPWORD27,908
+SwapSection (Elf32_Section_header *section)SwapSection36,1313
+SwapElfHeader (NachosHeader *nachosH)SwapElfHeader58,2090
+ReadHeaders (OpenFile *executable, NachosHeader *nachosH)ReadHeaders95,3579
+void AddrSpace::CopyPageTable (TranslationEntry *oldPT, TranslationEntry CopyPageTable262,9857
+int AddrSpace::ModifySpace(OpenFile *executable)ModifySpace299,11467
+int AddrSpace::InitSpace(OpenFile *executable)InitSpace364,13780
+AddrSpace::InitSpace(int numpages)InitSpace410,15276
+int AddrSpace::SetupTable() {SetupTable428,16032
+AddrSpace::~AddrSpace()~AddrSpace470,17379
+AddrSpace::InitRegisters()InitRegisters508,18462
+void AddrSpace::SaveState() SaveState537,19483
+void AddrSpace::RestoreState() RestoreState548,19847
+int AddrSpace::CopyFrom(Thread *ourThread)CopyFrom565,20542
+void AddrSpace::duplicatePage (int virtPageNumber) {duplicatePage599,21347
+AddrSpace::Setup_Load(OpenFile *executable, NachosHeader *nachosH)Setup_Load646,22715
+#define STACK_START_MAX(STACK_START_MAX651,22876
+unsigned int AddrSpace::NumPhysPagesOwned () {NumPhysPagesOwned799,28146
+int AddrSpace::TooManyFrames () {TooManyFrames817,28625
+FIFOPageOrdering( void *te1 , void *te2 )FIFOPageOrdering841,29210
+LRUPageOrdering( void *te1 , void *te2 )LRUPageOrdering848,29379
+void AddrSpace::getVictimCandidates( SortedList &l , int notMe , listItemComparator cmp )getVictimCandidates859,29848
+int AddrSpace::FIFO_Choose_Victim (int notMe) {FIFO_Choose_Victim888,30972
+int AddrSpace::LRU_Choose_Victim (int notMe) {LRU_Choose_Victim921,32210
+int AddrSpace::SC_Choose_Victim (int notMe) {SC_Choose_Victim954,33448
+void AddrSpace::calculateWorkingSetSize(void) {calculateWorkingSetSize1040,36106
+void AddrSpace::contractToWorkingSetSize()contractToWorkingSetSize1066,37020
+void AddrSpace::shiftReferenceHistories()shiftReferenceHistories1081,37425
+
+userprog/memmgr.h,438
+#define __MEMMGR_H__MEMMGR_H13,402
+struct Frame {          // VIRTUAL_MEMORYFrame22,521
+  AddrSpace **owners;owners23,563
+  int numOwners;numOwners24,585
+  int owners_page_number;owners_page_number25,602
+class MemoryManager {MemoryManager60,1713
+  int getNumOwners (int number) {getNumOwners73,2234
+  BitMap *page_flags;page_flags84,2465
+  Frame Frames[NumPhysPages];  // array of information on each frameFrames86,2490
+
+userprog/addrspace.h,1263
+#define ADDRSPACE_HADDRSPACE_H15,520
+#define UserStackSize	UserStackSize31,783
+#define REGINFO REGINFO34,861
+#define TEXT TEXT35,879
+#define RDATA RDATA36,897
+#define DATA DATA37,915
+#define BSS BSS38,933
+#define SBSS SBSS39,951
+#define NUM_SECTIONS NUM_SECTIONS40,969
+typedef struct nachosHeadernachosHeader42,993
+  Elf32_Elf_header file_header;file_header44,1023
+  Elf32_Section_header section[NUM_SECTIONS];section45,1055
+} NachosHeader;NachosHeader46,1101
+class AddrSpace {AddrSpace48,1118
+  const Thread *owner;owner50,1144
+  AddrSpace (Thread *t) :AddrSpace52,1168
+  TranslationEntry *get_page_ptr (unsigned int virtPage) const {get_page_ptr68,1710
+  static const unsigned int MIN_WSS = 4; // minimum working set sizeMIN_WSS81,2075
+  static const unsigned int MAX_WSS = 32; // maximumMAX_WSS82,2144
+  unsigned int iWorkingSetSize;iWorkingSetSize88,2302
+  TranslationEntry *pageTable;	      // Assume linear page table translationpageTable100,2671
+  unsigned int numPages;	      // Number of pages in the virtual numPages102,2798
+  OpenFile *execFile;                 // Executable that is currently runningexecFile104,2919
+  unsigned int startAddress;          // Where to start executingstartAddress106,3075
+
+userprog/Makefile,798
+IS_LOCAL_INSTALL = noIS_LOCAL_INSTALL12,457
+KUSP_INCLUDE_FLAGS = KUSP_INCLUDE_FLAGS14,480
+	KUSP_INCLUDE_FLAGS = -I/opt/kusp/includeKUSP_INCLUDE_FLAGS17,535
+	KUSP_LIBRARY_DIR = -L/opt/kusp/libKUSP_LIBRARY_DIR18,577
+DSUI_INCLUDE_ARG = -I../dsui_tmp -I../dsui-sched -I../dsui-vmDSUI_INCLUDE_ARG22,634
+DSUI_DEFINE      = -DCONFIG_DSUIDSUI_DEFINE23,696
+DEFINES = -DUSER_PROGRAM -DFILESYS_NEEDED -DFILESYS_STUB -DSMARTGDB $(DSUI_INCLUDE_ARG)DEFINES26,750
+INCPATH = -I../bin -I../filesys -I../userprog -I../threads -I../machine -I../debug -I../network $(DSUI_DEFINE) $(KUSP_INCLUDE_FLAGS)INCPATH28,876
+HFILES = $(THREAD_H) $(USERPROG_H) $(DEBUG_H)HFILES30,1141
+CFILES = $(THREAD_C) $(USERPROG_C) $(DEBUG_C)CFILES31,1187
+C_OFILES = $(THREAD_O) $(USERPROG_O) $(DEBUG_O)C_OFILES32,1233
+
+bin/int.h,394
+#define MEMSIZE MEMSIZE11,233
+#define memoffset memoffset12,257
+#define amark(amark15,330
+#define imark(imark16,349
+#define ifetch(ifetch18,369
+#define fetch(fetch19,438
+#define sfetch(sfetch20,506
+#define usfetch(usfetch21,577
+#define cfetch(cfetch22,657
+#define ucfetch(ucfetch23,727
+#define store(store25,807
+#define sstore(sstore27,889
+#define cstore(cstore29,974
+
+bin/disasm.c,1551
+static FILE *fp;fp18,383
+static LDFILE *ldptr;ldptr19,400
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;texthead20,422
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;rdatahead20,422
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;datahead20,422
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;sdatahead20,422
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;sbsshead20,422
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;bsshead20,422
+static char filename[1000] = "a.out";	/* default a.out file */filename22,498
+static char self[256];			/* name of invoking program */self23,561
+char mem[MEMSIZE];		/* main memory. use malloc later */mem25,618
+int TRACE, Traptrace, Regtrace;TRACE26,674
+int TRACE, Traptrace, Regtrace;Traptrace26,674
+int TRACE, Traptrace, Regtrace;Regtrace26,674
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;NROWS27,706
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;ASSOC27,706
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;LINESIZE27,706
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;RAND27,706
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;LRD27,706
+int pc;pc28,756
+main(argc, argv)main32,789
+#define LOADSECTION(LOADSECTION69,1422
+load_section(hd)load_section71,1470
+load_program(filename)load_program88,1870
+int *m_alloc(n)m_alloc140,3282
+disasm(startpc, argc, argv)disasm148,3379
+dis1(xpc)dis1162,3546
+
+bin/encode.h,2176
+#define I_SPECIAL	I_SPECIAL12,254
+#define I_BCOND	I_BCOND13,276
+#define I_J	I_J14,297
+#define I_JAL	I_JAL15,314
+#define I_BEQ	I_BEQ16,333
+#define I_BNE	I_BNE17,352
+#define I_BLEZ	I_BLEZ18,371
+#define I_BGTZ	I_BGTZ19,391
+#define I_ADDI	I_ADDI20,411
+#define I_ADDIU	I_ADDIU21,431
+#define I_SLTI	I_SLTI22,452
+#define I_SLTIU	I_SLTIU23,472
+#define I_ANDI	I_ANDI24,493
+#define I_ORI	I_ORI25,513
+#define I_XORI	I_XORI26,532
+#define I_LUI	I_LUI27,552
+#define I_COP0	I_COP028,571
+#define I_COP1	I_COP129,591
+#define I_COP2	I_COP230,611
+#define I_COP3	I_COP331,631
+#define I_LB	I_LB33,652
+#define I_LH	I_LH34,670
+#define I_LWL	I_LWL35,688
+#define I_LW	I_LW36,707
+#define I_LBU	I_LBU37,725
+#define I_LHU	I_LHU38,744
+#define I_LWR	I_LWR39,763
+#define I_SB	I_SB41,783
+#define I_SH	I_SH42,801
+#define I_SWL	I_SWL43,819
+#define I_SW	I_SW44,838
+#define I_SWR	I_SWR46,857
+#define I_LWC0	I_LWC048,877
+#define I_LWC1	I_LWC149,897
+#define I_LWC2	I_LWC250,917
+#define I_LWC3	I_LWC351,937
+#define I_SWC0	I_SWC053,958
+#define I_SWC1	I_SWC154,978
+#define I_SWC2	I_SWC255,998
+#define I_SWC3	I_SWC356,1018
+#define I_SLL	I_SLL60,1062
+#define I_SRL	I_SRL62,1082
+#define I_SRA	I_SRA63,1101
+#define I_SLLV	I_SLLV64,1120
+#define I_SRLV	I_SRLV66,1141
+#define I_SRAV	I_SRAV67,1161
+#define I_JR	I_JR68,1181
+#define I_JALR	I_JALR69,1199
+#define I_SYSCALL	I_SYSCALL71,1220
+#define I_BREAK	I_BREAK72,1242
+#define I_MFHI	I_MFHI74,1264
+#define I_MTHI	I_MTHI75,1284
+#define I_MFLO	I_MFLO76,1304
+#define I_MTLO	I_MTLO77,1324
+#define I_MULT	I_MULT79,1345
+#define I_MULTU	I_MULTU80,1365
+#define I_DIV	I_DIV81,1386
+#define I_DIVU	I_DIVU82,1405
+#define I_ADD	I_ADD84,1426
+#define I_ADDU	I_ADDU85,1445
+#define I_SUB	I_SUB86,1465
+#define I_SUBU	I_SUBU87,1484
+#define I_AND	I_AND88,1504
+#define I_OR	I_OR89,1523
+#define I_XOR	I_XOR90,1541
+#define I_NOR	I_NOR91,1560
+#define I_SLT	I_SLT93,1580
+#define I_SLTU	I_SLTU94,1599
+#define I_BLTZ	I_BLTZ99,1642
+#define I_BGEZ	I_BGEZ100,1662
+#define I_BLTZAL	I_BLTZAL102,1683
+#define I_BGEZAL	I_BGEZAL103,1704
+#define I_NOP I_NOP107,1752
+
+bin/execute.c,1570
+#define FAST	FAST14,307
+#define true	true15,322
+#define false	false16,337
+int Reg[32];			/* GPR's */Reg23,427
+int HI, LO;			/* mul/div machine registers */HI24,454
+int HI, LO;			/* mul/div machine registers */LO24,454
+int numjmpls;numjmpls27,535
+int arch1cycles;arch1cycles28,549
+#define  b31(b3131,601
+#define cc_add(cc_add34,708
+#define cc_sub(cc_sub40,857
+#define cc_logic(cc_logic48,1072
+#define cc_mulscc(cc_mulscc54,1149
+runprogram(startpc, argc, argv)runprogram61,1317
+u()				/* unimplemented */u378,8659
+ny()ny383,8740
+RS(i)RS391,8824
+RT(i)RT397,8857
+RD(i)RD403,8890
+IM(i)IM409,8923
+dump_reg()dump_reg417,8961
+ilog2(i)ilog2447,9432
+#define NH NH465,9831
+#define NNN NNN466,9849
+static int hists[NH][NNN];hists468,9869
+int hoflo[NH], htotal[NH];hoflo469,9896
+int hoflo[NH], htotal[NH];htotal469,9896
+void henters(n, hist)henters471,9924
+hprint()hprint478,10048
+int numadds=1, numsubs=1, numsuccesses, numcarries;numadds501,10475
+int numadds=1, numsubs=1, numsuccesses, numcarries;numsubs501,10475
+int numadds=1, numsubs=1, numsuccesses, numcarries;numsuccesses501,10475
+int numadds=1, numsubs=1, numsuccesses, numcarries;numcarries501,10475
+int addtable[33][33];addtable502,10527
+int subtable[33][33];subtable503,10549
+char fmt[] = "%6d";fmt505,10572
+char fmt2[] = "------";fmt2506,10592
+patable(tab)patable508,10617
+printstatistics()printstatistics533,10937
+#define NNNN	NNNN555,11471
+static int hist[NNNN];hist557,11490
+henter(n)henter559,11514
+printhist()printhist566,11579
+
+bin/d.c,185
+#define NULL	NULL11,270
+int sptr;sptr13,286
+int longdis = 1;longdis14,296
+char *regstrings[] =regstrings19,357
+#define R(R27,594
+dump_ascii(instruction, pc)dump_ascii30,623
+
+bin/instr.h,234
+#define rd(rd11,258
+#define rt(rt12,294
+#define rs(rs13,330
+#define shamt(shamt14,366
+#define immed(immed15,403
+#define off26(off2617,467
+#define top4(top418,514
+#define off16(off1619,561
+#define extend(extend21,600
+
+bin/main.c,1459
+static FILE *fp;fp18,382
+static LDFILE *ldptr;ldptr19,399
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;texthead20,421
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;rdatahead20,421
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;datahead20,421
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;sdatahead20,421
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;sbsshead20,421
+static SCNHDR texthead, rdatahead, datahead, sdatahead, sbsshead, bsshead;bsshead20,421
+static char filename[1000] = "a.out";	/* default a.out file */filename22,497
+static char self[256];			/* name of invoking program */self23,560
+char mem[MEMSIZE];		/* main memory. use malloc later */mem25,617
+int TRACE, Traptrace, Regtrace;TRACE26,673
+int TRACE, Traptrace, Regtrace;Traptrace26,673
+int TRACE, Traptrace, Regtrace;Regtrace26,673
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;NROWS27,705
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;ASSOC27,705
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;LINESIZE27,705
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;RAND27,705
+int NROWS=64, ASSOC=1, LINESIZE=4, RAND=0, LRD=0;LRD27,705
+main(argc, argv)main31,780
+char *string(s)string81,1781
+load_program(filename)load_program92,1909
+#define LOADSECTION(LOADSECTION112,2282
+int *m_alloc(n)m_alloc160,3510
+
+bin/out.c,1190
+#define MAINMAIN7,207
+#undef MAINMAIN9,243
+#define read_struct(read_struct29,649
+#define MAXRELOCS MAXRELOCS31,704
+#define MAXDATA MAXDATA34,729
+struct data {data36,752
+  long data[MAXDATA];data37,766
+  struct reloc reloc[MAXRELOCS];reloc38,788
+  int length;length39,821
+  int relocs;relocs40,835
+#define MAXSCNS MAXSCNS43,853
+#define MAXSYMS MAXSYMS44,872
+#define MAXSSPACE MAXSSPACE45,892
+struct filehdr filehdr;filehdr47,917
+struct aouthdr aouthdr;aouthdr48,941
+struct scnhdr scnhdr[MAXSCNS];scnhdr49,965
+struct data section[MAXSCNS];section50,996
+HDRR symhdr;symhdr51,1026
+EXTR symbols[MAXSYMS];symbols52,1039
+char sspace[20000];sspace53,1062
+char *symbol_type[] = {symbol_type55,1083
+char *storage_class[] = {storage_class60,1269
+main(argc,argv)main66,1540
+static column = 1;column148,3755
+static FILE *outfile = stdout;outfile149,3774
+myprintf(va_alist)myprintf153,3840
+mytab(n)mytab174,4187
+mysetfile(f)mysetfile184,4297
+#define printf printf190,4339
+print_section(i)print_section193,4379
+char *section_name[] = {section_name224,5011
+char *reloc_type[] = {reloc_type229,5135
+print_reloc(vaddr,i,j)print_reloc233,5223
+
+bin/opstrings.c,79
+char *normalops[] = {normalops9,231
+char *specialops[] = {specialops76,788
+
+bin/elf.h,4804
+#define _BIN_ELF_H_BIN_ELF_H7,156
+#define EI_MAG0	EI_MAG014,294
+#define ELFMAG0	ELFMAG015,352
+#define EI_MAG1	EI_MAG117,404
+#define ELFMAG1	ELFMAG118,462
+#define EI_MAG2	EI_MAG220,514
+#define ELFMAG2	ELFMAG221,572
+#define EI_MAG3	EI_MAG323,624
+#define ELFMAG3	ELFMAG324,682
+#define EI_CLASS	EI_CLASS26,734
+#define ELFCLASSNONE	ELFCLASSNONE27,770
+#define ELFCLASS32	ELFCLASS3228,819
+#define ELFCLASS64	ELFCLASS6429,867
+#define EI_DATA	EI_DATA31,916
+#define ELFDATANONE	ELFDATANONE32,955
+#define ELFDATA2LSB	ELFDATA2LSB33,1011
+#define ELFDATA2MSB	ELFDATA2MSB34,1075
+#define EI_VERSION	EI_VERSION36,1137
+#define EI_OSABI	EI_OSABI38,1178
+#define ELFOSABI_NONE	ELFOSABI_NONE39,1235
+#define ELFOSABI_STANDALONE ELFOSABI_STANDALONE40,1289
+#define EI_ABIVERSION	EI_ABIVERSION42,1362
+#define EI_PAD	EI_PAD44,1405
+#define ET_NONE	ET_NONE48,1515
+#define ET_REL	ET_REL49,1553
+#define ET_EXEC	ET_EXEC50,1594
+#define ET_DYN	ET_DYN51,1635
+#define ET_CORE	ET_CORE52,1678
+#define EM_NONE	EM_NONE56,1775
+#define EM_MIPS	EM_MIPS57,1813
+#define EM_MIPS_RS3_LE	EM_MIPS_RS3_LE58,1881
+#define EV_NONE	EV_NONE62,2000
+#define EV_CURRENT	EV_CURRENT63,2046
+  unsigned char	e_ident[16];		/* ELF "magic number" */e_ident66,2108
+  uint16_t	e_type;			/* Identifies object file type */e_type67,2163
+  uint16_t	e_machine;		/* Specifies required architecture */e_machine68,2218
+  uint32_t	e_version;		/* Identifies object file version */e_version69,2279
+  uint32_t	e_entry;		/* Entry point virtual address */e_entry70,2339
+  uint32_t	e_phoff;		/* Program header table file offset */e_phoff71,2394
+  uint32_t	e_shoff;		/* Section header table file offset */e_shoff72,2454
+  uint32_t	e_flags;		/* Processor-specific flags */e_flags73,2514
+  uint16_t	e_ehsize;		/* ELF header size in bytes */e_ehsize74,2566
+  uint16_t	e_phentsize;		/* Program header table entry size */e_phentsize75,2619
+  uint16_t	e_phnum;		/* Program header table entry count */e_phnum76,2682
+  uint16_t	e_shentsize;		/* Section header table entry size */e_shentsize77,2742
+  uint16_t	e_shnum;		/* Section header table entry count */e_shnum78,2805
+  uint16_t	e_shstrndx;		/* Section header string table index */e_shstrndx79,2865
+} Elf32_Elf_header;Elf32_Elf_header80,2929
+  uint32_t	p_type;			/* Identifies program segment type */p_type83,2967
+  uint32_t	p_offset;		/* Segment file offset */p_offset84,3026
+  uint32_t	p_vaddr;		/* Segment virtual address */p_vaddr85,3074
+  uint32_t	p_paddr;		/* Segment physical address */p_paddr86,3125
+  uint32_t	p_filesz;		/* Segment size in file */p_filesz87,3177
+  uint32_t	p_memsz;		/* Segment size in memory */p_memsz88,3226
+  uint32_t	p_flags;		/* Segment flags */p_flags89,3276
+  uint32_t	p_align;		/* Segment alignment, file & memory */p_align90,3317
+} Elf32_Program_header;Elf32_Program_header91,3377
+#define SHT_NULL	SHT_NULL95,3452
+#define SHT_PROGBITS	SHT_PROGBITS96,3512
+#define SHT_SYMTAB	SHT_SYMTAB97,3574
+#define SHT_STRTAB	SHT_STRTAB98,3628
+#define SHT_RELA	SHT_RELA99,3671
+#define SHT_HASH	SHT_HASH100,3729
+#define SHT_DYNAMIC	SHT_DYNAMIC101,3775
+#define SHT_NOTE	SHT_NOTE102,3836
+#define SHT_NOBITS	SHT_NOBITS103,3890
+#define SHT_REL	SHT_REL104,3952
+#define SHT_SHLIB	SHT_SHLIB105,4009
+#define SHT_DYNSYM	SHT_DYNSYM106,4069
+#define SHT_INIT_ARRAY	SHT_INIT_ARRAY108,4128
+#define SHT_FINI_ARRAY	SHT_FINI_ARRAY109,4195
+#define SHT_PREINIT_ARRAY SHT_PREINIT_ARRAY110,4264
+#define SHT_GROUP	SHT_GROUP111,4332
+#define SHT_SYMTAB_SHNDX SHT_SYMTAB_SHNDX112,4395
+#define SHF_WRITE	SHF_WRITE116,4515
+#define SHF_ALLOC	SHF_ALLOC117,4579
+#define SHF_EXECINSTR	SHF_EXECINSTR118,4645
+#define SHF_MERGE	SHF_MERGE119,4714
+#define SHF_STRINGS	SHF_STRINGS120,4782
+#define SHF_INFO_LINK	SHF_INFO_LINK121,4860
+#define SHF_LINK_ORDER	SHF_LINK_ORDER122,4938
+#define SHF_OS_NONCONFORMING SHF_OS_NONCONFORMING123,5015
+#define SHF_GROUP	SHF_GROUP124,5091
+#define SHF_TLS	SHF_TLS125,5150
+  uint32_t	sh_name;		/* Section name, index in string tbl */sh_name128,5230
+  uint32_t	sh_type;		/* Type of section */sh_type129,5291
+  uint32_t	sh_flags;		/* Miscellaneous section attributes */sh_flags130,5334
+  uint32_t	sh_addr;		/* Section virtual addr at execution */sh_addr131,5395
+  uint32_t	sh_offset;		/* Section file offset */sh_offset132,5456
+  uint32_t	sh_size;		/* Size of section in bytes */sh_size133,5505
+  uint32_t	sh_link;		/* Index of another section */sh_link134,5557
+  uint32_t	sh_info;		/* Additional section information */sh_info135,5609
+  uint32_t	sh_addralign;		/* Section alignment */sh_addralign136,5667
+  uint32_t	sh_entsize;		/* Entry size if section holds table */sh_entsize137,5717
+} Elf32_Section_header;Elf32_Section_header138,5781
+
+bin/Makefile,73
+CC=gccCC15,496
+CFLAGS=-I./ -I../threadsCFLAGS16,503
+LD=gccLD17,528
+
+filesys/filehdr.cc,371
+FileHeader::Allocate(BitMap *freeMap, int fileSize)Allocate44,1722
+FileHeader::Deallocate(BitMap *freeMap)Deallocate64,2331
+FileHeader::FetchFrom(int sector)FetchFrom80,2818
+FileHeader::WriteBack(int sector)WriteBack93,3210
+FileHeader::ByteToSector(int offset)ByteToSector109,3796
+FileHeader::FileLength()FileLength120,4105
+FileHeader::Print()Print132,4446
+
+filesys/filesys.cc,520
+#define FreeMapSector FreeMapSector57,2386
+#define DirectorySector DirectorySector58,2412
+#define FreeMapFileSize FreeMapFileSize63,2634
+#define NumDirEntries NumDirEntries64,2685
+#define DirectoryFileSize DirectoryFileSize65,2712
+FileSystem::FileSystem(bool format)FileSystem80,3349
+FileSystem::Create(char *name, int initialSize)Create175,6902
+FileSystem::Open(char *name)Open228,8540
+FileSystem::Remove(char *name)Remove258,9525
+FileSystem::List()List296,10582
+FileSystem::Print()Print316,11142
+
+filesys/fdt.h,391
+#define __FDT_H__FDT_H11,328
+enum FileDescriptorType { DiskFile, ConsoleFile };FileDescriptorType19,591
+enum FileDescriptorType { DiskFile, ConsoleFile };DiskFile19,591
+enum FileDescriptorType { DiskFile, ConsoleFile };ConsoleFile19,591
+struct FDTEntry {FDTEntry21,643
+  FileDescriptorType type;type22,661
+  OpenFile *openfile;  // If this entry is a disk file, openfile23,688
+
+filesys/filehdr.h,387
+#define FILEHDR_HFILEHDR_H17,520
+#define NumDirect NumDirect22,578
+#define MaxFileSize MaxFileSize23,644
+class FileHeader {FileHeader40,1415
+    int numBytes;			// Number of bytes in the filenumBytes62,2134
+    int numSectors;			// Number of data sectors in the filenumSectors63,2185
+    int dataSectors[NumDirect];		// Disk sector numbers for each data dataSectors64,2245
+
+filesys/synchdisk.cc,337
+DiskRequestDone (size_t arg)DiskRequestDone29,1113
+SynchDisk::SynchDisk(char* name)SynchDisk45,1585
+SynchDisk::~SynchDisk()~SynchDisk58,2028
+SynchDisk::ReadSector(int sectorNumber, char* data)ReadSector75,2502
+SynchDisk::WriteSector(int sectorNumber, char* data)WriteSector93,3106
+SynchDisk::RequestDone()RequestDone108,3596
+
+filesys/filesys.h,496
+#define FS_HFS_H36,1736
+class FileSystem {FileSystem44,1949
+    FileSystem(bool format) { FileSystem46,1978
+    bool Create(char *name, int initialSize) { Create50,2092
+    OpenFile* Open(char *name) {Open60,2345
+    bool Remove(char *name) { return Unlink(name) == 0; }Remove67,2525
+class FileSystem {FileSystem72,2605
+   OpenFile* freeMapFile;		// Bit map of free disk blocks,freeMapFile93,3248
+   OpenFile* directoryFile;		// "Root" directory -- list of directoryFile95,3337
+
+filesys/openfile.cc,435
+OpenFile::OpenFile(int sector)OpenFile27,975
+OpenFile::~OpenFile()~OpenFile39,1328
+OpenFile::Seek(int position)Seek53,1732
+OpenFile::Read(void *into, size_t numBytes)Read72,2408
+OpenFile::Write(void *into, size_t numBytes)Write80,2560
+OpenFile::ReadAt(void *into, size_t numBytes, int position)ReadAt114,3968
+OpenFile::WriteAt(void *from, size_t numBytes, int position)WriteAt144,4988
+OpenFile::Length() Length191,6701
+
+filesys/synchdisk.h,281
+#define SYNCHDISK_HSYNCHDISK_H14,392
+class SynchDisk {SynchDisk29,1021
+    Disk *disk;		  		// Raw disk devicedisk48,1699
+    KernelSemaphore *semaphore; 	// To synchronize requesting thread semaphore49,1739
+    Lock *lock;		  		// Only one read/write requestlock51,1844
+
+filesys/openfile.h,869
+#define OPENFILE_HOPENFILE_H21,889
+class OpenFile {OpenFile29,1099
+    OpenFile(int f) { file = f; currentOffset = 0; }	// open the fileOpenFile31,1126
+    ~OpenFile() { Close(file); }			// close the file~OpenFile32,1196
+    int ReadAt(void *into, size_t numBytes, int position) { ReadAt34,1250
+    int WriteAt(void *from, size_t numBytes, int position) { WriteAt38,1394
+    int Read(void *into, size_t numBytes) {Read43,1549
+    int Write(void *from, size_t numBytes) {Write48,1703
+    int Length() { Lseek(file, 0, 2); return Tell(file); }Length54,1865
+    int get_fd() { return file; }get_fd55,1924
+    int file;file57,1969
+    int currentOffset;currentOffset58,1983
+class OpenFile {OpenFile64,2046
+    FileHeader *hdr;			// Header for this file hdr90,2960
+    int seekPosition;			// Current position within the fileseekPosition91,3008
+
+filesys/directory.cc,462
+Directory::Directory(int size)Directory40,1615
+Directory::~Directory()~Directory53,1990
+Directory::FetchFrom(OpenFile *file)FetchFrom66,2323
+Directory::WriteBack(OpenFile *file)WriteBack79,2729
+Directory::FindIndex(char *name)FindIndex93,3204
+Directory::Find(char *name)Find111,3784
+Directory::Add(char *name, int newSector)Add132,4412
+Directory::Remove(char *name)Remove156,5145
+Directory::List()List172,5533
+Directory::Print()Print186,5948
+
+filesys/directory.h,518
+#define DIRECTORY_HDIRECTORY_H20,678
+#define FileNameMaxLen FileNameMaxLen24,722
+class DirectoryEntry {DirectoryEntry34,1114
+    bool inUse;				// Is this directory entry in use?inUse36,1147
+    int sector;				// Location on disk to find the sector37,1201
+    char name[FileNameMaxLen + 1];	// Text name for file, with +1 for name39,1289
+class Directory {Directory53,1818
+    int tableSize;			// Number of directory entriestableSize77,2640
+    DirectoryEntry *table;		// Table of pairs: table78,2692
+
+filesys/fstest.cc,366
+#define TransferSize TransferSize24,680
+Copy(char *from, char *to)Copy32,976
+Print(char *name)Print78,2202
+#define FileName FileName111,3177
+#define Contents Contents112,3206
+#define ContentSize ContentSize113,3237
+#define FileSize FileSize114,3275
+FileWrite()FileWrite117,3335
+FileRead()FileRead145,4036
+PerformanceTest()PerformanceTest173,4747
+
+filesys/Makefile,390
+DEFINES =-DTHREADS -DUSER_PROGRAM -DVM -DFILESYS_NEEDED -DFILESYSDEFINES11,446
+INCPATH = -I../filesys -I../bin -I../vm -I../userprog -I../threads -I../machineINCPATH12,512
+HFILES = $(THREAD_H) $(USERPROG_H) $(VM_H) $(FILESYS_H)HFILES13,592
+CFILES = $(THREAD_C) $(USERPROG_C) $(VM_C) $(FILESYS_C)CFILES14,648
+C_OFILES = $(THREAD_O) $(USERPROG_O) $(VM_O) $(FILESYS_O)C_OFILES15,704
+
+make-assignment.sh,0
+
+make-assignment.awk,0
+
+Makefile,43
+MAKE = makeMAKE5,198
+LPR = lprLPR6,210
+
+run-regressions.sh,33
+function dotest {dotest44,1336

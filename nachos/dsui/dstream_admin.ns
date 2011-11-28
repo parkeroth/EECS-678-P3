@@ -1,0 +1,54 @@
+#!lib.parsers.ns_parser_v1
+namespace {
+	desc = ""
+	family DSTREAM_ADMIN_FAM 0 {
+		desc = """
+
+
+"""
+		shortdesc = "Datastreams Administrative events"
+		event EVENT_ASSOCIATE_NAME 3 {
+			printf = "print_string"
+			shortdesc = "Process-Name association event"
+		}
+		event EVENT_COUNTER 0 {
+			printf = "get_counter"
+			shortdesc = "Datastream Counter"
+		}
+		event EVENT_CPU_TIME_INFO 9 {
+			printf = "print_cpu_time_info"
+			shortdesc = "CPU Time related information"
+		}
+		event EVENT_DECLARE_NAME 7 {
+			printf = "print_string"
+			shortdesc = "disinterest in a name"
+		}
+		event EVENT_DISASSOCIATE_NAME 4 {
+			printf = "print_string"
+			shortdesc = "Process-Name disassociation event"
+		}
+		event EVENT_HISTOGRAM 1 {
+			printf = "get_histogram_group"
+			shortdesc = "Datastream Histogram"
+		}
+		event EVENT_IGNORE_NAME 6 {
+			printf = "print_string"
+			shortdesc = "disinterest in a name"
+		}
+		event EVENT_INTERVAL 8 {
+			printf = "print_string"
+			shortdesc = "Datastream Interval"
+		}
+		event EVENT_OBJECT 2 {
+			printf = "get_object"
+			shortdesc = "Datastream Object"
+		}
+		event EVENT_TRACK_NAME 5 {
+			printf = "print_string"
+			shortdesc = "Interested in a Name"
+		}
+		event EVENT_BUFFER_FLUSH 10 {
+			shortdesc = "dsui flushed buffers"
+		}
+	}
+}

@@ -1,0 +1,560 @@
+
+<access1_dumb_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_dumb_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_dumb_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_dumb_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_dumb_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_dumb_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_dumb_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_dumb_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_fifo_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_fifo_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_fifo_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_fifo_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_fifo_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_fifo_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_fifo_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_fifo_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_lru_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_lru_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_lru_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_lru_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_lru_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_lru_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_lru_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_lru_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_secondchance_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_secondchance_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_secondchance_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_secondchance_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_secondchance_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_secondchance_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access1_secondchance_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access1_secondchance_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_dumb_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_dumb_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_dumb_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_dumb_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_dumb_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_dumb_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_dumb_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_dumb_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_fifo_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_fifo_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_fifo_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_fifo_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_fifo_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_fifo_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_fifo_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_fifo_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_lru_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_lru_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_lru_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_lru_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_lru_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_lru_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_lru_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_lru_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_secondchance_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_secondchance_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_secondchance_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_secondchance_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_secondchance_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_secondchance_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access2_secondchance_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access2_secondchance_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_dumb_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_dumb_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_dumb_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_dumb_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_dumb_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_dumb_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_dumb_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_dumb_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_fifo_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_fifo_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_fifo_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_fifo_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_fifo_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_fifo_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_fifo_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_fifo_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_lru_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_lru_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_lru_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_lru_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_lru_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_lru_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_lru_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_lru_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_secondchance_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_secondchance_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_secondchance_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_secondchance_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_secondchance_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_secondchance_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<matmult_secondchance_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/matmult_secondchance_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_dumb_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_dumb_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_dumb_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_dumb_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_dumb_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_dumb_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_dumb_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_dumb_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_fifo_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_fifo_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_fifo_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_fifo_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_fifo_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_fifo_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_fifo_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_fifo_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_lru_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_lru_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_lru_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_lru_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_lru_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_lru_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_lru_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_lru_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_secondchance_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_secondchance_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_secondchance_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_secondchance_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_secondchance_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_secondchance_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access3_secondchance_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access3_secondchance_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_dumb_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_dumb_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_dumb_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_dumb_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_dumb_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_dumb_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_dumb_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_dumb_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_fifo_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_fifo_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_fifo_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_fifo_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_fifo_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_fifo_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_fifo_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_fifo_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_lru_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_lru_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_lru_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_lru_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_lru_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_lru_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_lru_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_lru_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_secondchance_1>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_secondchance_1.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_secondchance_2>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_secondchance_2.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_secondchance_4>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_secondchance_4.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]
+
+<access4_secondchance_8>
+input_files = "/users/039/j/jstaley/temp/pa3-solution/dsui_tmp/prp/bins/access4_secondchance_8.bin"
+filter_modules = "prpfilters.py"
+filters = [
+	prpfilters.prp()
+]

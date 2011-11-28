@@ -1,0 +1,128 @@
+#!lib.parsers.ns_parser_v1
+namespace {
+	desc = "NachOS DSUI Instrumentation"
+	
+	family SYSCALL 1 {
+		desc = ""
+		shortdesc = "NachOS System Call Family"
+
+		event NICE 0 {
+			shortdesc = "system call: nice"
+		}
+
+		event FORK 1 {
+			shortdesc = "system call: fork"
+		}
+
+		event EXIT 2 {
+			shortdesc = "system call: exit"
+		}
+	}
+
+	family SCHED 2 {
+		desc = ""
+		shortdesc = "scheduling related events"
+
+		event SWITCH_TO 0 {
+			shortdesc = "context switch to"
+		}
+
+		event SWITCH_FROM 1 {
+			shortdesc = "context switch from"
+		}
+
+		event SCHED_TIMER 2 {
+			shortdesc = "sched timer interrupt handler"
+		}
+
+		event READY_TO_RUN 3 {
+			shortdesc = "scheduler::readytorun()"
+		}
+	}
+
+	family THREAD 3 {
+		desc = ""
+		shortdesc = "thread related events"
+
+		event FINISH 0 {
+			shortdesc = "thread::finish()"
+		}
+
+		event CLASS_CONSTRUCTOR 1 {
+			shortdesc = "thread::thread()"
+		}
+
+		event REACHED_EXIT 2 {
+			shortdesc = "thread::reachedexit()"
+		}
+
+		event SET_STATUS 3 {
+			shortdesc = "thread::setstatus()"
+		}
+	}
+
+	family MACHINE 4 {
+		desc = ""
+		shortdesc = "machine related events"
+
+		event RUN 0 {
+			shortdesc = "machine::run()"
+		}
+
+		event ONE_INSTRUCTION 1 {
+			shortdesc = "machine::oneinstruction()"
+		}
+	}
+
+	family INTERRUPT 5 {
+		desc = ""
+		shortdesc = "interrupt related events"
+		
+		event ONE_TICK 0 {
+			shortdesc = "interrupt::onetick()"
+		}
+	}
+
+	family EXCEPTION 6 {
+		desc = ""
+		shortdesc = "exception related events"
+
+		event UserTicksSinceLastPageFault 0 {
+			shortdesc = "user ticks since last page fault"
+		}
+	}
+
+	family STATS 7 {
+		desc = ""
+		shortdesc = "statistics"
+
+		event PAGE_FAULTS 0 {
+			shortdesc = "page faults"
+		}
+
+		event PAGE_INS 1 {
+			shortdesc = "page ins"
+		}
+
+		event PAGE_OUTS 2 {
+			shortdesc = "page outs"
+		}
+	}
+
+	family ARGS 8 {
+		desc = ""
+		shortdesc = "nachos aruments"
+
+		event PRP 0 {
+			shortdesc = "page repl policy"
+		}
+
+		event PROGRAM 1 {
+			shortdesc = "program to run"
+		}
+
+		event DELTA 2 {
+			shortdesc = "-delta"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+<main>
+filter_modules = "nachosfilters.py"
+filters = {
+	main = [
+		head.input(
+			namespace  = {
+				THREAD_ACTIVITY = {
+					desc = "thread activity intervals"
+					entities = {
+						ACTIVITY_PERIOD = interval(
+							desc = "period of activity"
+						)
+						INACTIVITY_PERIOD = interval(
+							desc = "period of inactivity"
+						)
+					}
+				}
+			}
+			file = "nachos.dsui.bin"
+		)
+
+		nachosfilters.thread_activity_periods()
+		nachosfilters.process_thread_activity_periods()
+	]
+}

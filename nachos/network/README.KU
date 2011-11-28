@@ -1,0 +1,2 @@
+678 as we currently use it does not use any networking code, so this directory
+is unimportant.  However, KUDOS will make use of this directory.

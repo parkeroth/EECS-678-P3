@@ -1,0 +1,132 @@
+<STATS>
+desc = "statistics"
+id = 7
+entities = {
+	PAGE_FAULTS = event(
+		desc = "page faults"
+		id = 0
+	)
+	PAGE_INS = event(
+		desc = "page ins"
+		id = 1
+	)
+	PAGE_OUTS = event(
+		desc = "page outs"
+		id = 2
+	)
+}
+
+<EXCEPTION>
+desc = "exception related events"
+id = 6
+entities = {
+	UserTicksSinceLastPageFault = event(
+		desc = "user ticks since last page fault"
+		id = 0
+	)
+}
+
+<MACHINE>
+desc = "machine related events"
+id = 4
+entities = {
+	ONE_INSTRUCTION = event(
+		desc = "machine::oneinstruction()"
+		id = 1
+	)
+	RUN = event(
+		desc = "machine::run()"
+		id = 0
+	)
+}
+
+<SYSCALL>
+desc = "NachOS System Call Family"
+id = 1
+entities = {
+	EXIT = event(
+		desc = "system call: exit"
+		id = 2
+	)
+	FORK = event(
+		desc = "system call: fork"
+		id = 1
+	)
+	NICE = event(
+		desc = "system call: nice"
+		id = 0
+	)
+}
+
+<INTERRUPT>
+desc = "interrupt related events"
+id = 5
+entities = {
+	ONE_TICK = event(
+		desc = "interrupt::onetick()"
+		id = 0
+	)
+}
+
+<THREAD>
+desc = "thread related events"
+id = 3
+entities = {
+	CLASS_CONSTRUCTOR = event(
+		desc = "thread::thread()"
+		id = 1
+	)
+	FINISH = event(
+		desc = "thread::finish()"
+		id = 0
+	)
+	REACHED_EXIT = event(
+		desc = "thread::reachedexit()"
+		id = 2
+	)
+	SET_STATUS = event(
+		desc = "thread::setstatus()"
+		id = 3
+	)
+}
+
+<ARGS>
+desc = "nachos aruments"
+id = 8
+entities = {
+	DELTA = event(
+		desc = "-delta"
+		id = 2
+	)
+	PROGRAM = event(
+		desc = "program to run"
+		id = 1
+	)
+	PRP = event(
+		desc = "page repl policy"
+		id = 0
+	)
+}
+
+<SCHED>
+desc = "scheduling related events"
+id = 2
+entities = {
+	READY_TO_RUN = event(
+		desc = "scheduler::readytorun()"
+		id = 3
+	)
+	SCHED_TIMER = event(
+		desc = "sched timer interrupt handler"
+		id = 2
+	)
+	SWITCH_FROM = event(
+		desc = "context switch from"
+		id = 1
+	)
+	SWITCH_TO = event(
+		desc = "context switch to"
+		id = 0
+	)
+}
+

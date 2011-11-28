@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for hist in $1/*.histo;
+do
+	echo "processing $hist";
+	python ../histos2gnuplot.py $hist.ps $hist $hist | gnuplot;
+	ps2pdf $hist.ps $hist.pdf
+	mv $hist.pdf pdfs
+done;

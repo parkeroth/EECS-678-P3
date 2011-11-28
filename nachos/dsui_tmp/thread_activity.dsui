@@ -1,0 +1,18 @@
+<dsui>
+output_file = "nachos.dsui.bin"
+
+<dsui_enabled>
+MACHINE = [
+	RUN
+	ONE_INSTRUCTION
+]
+INTERRUPT = [
+	ONE_TICK
+]
+THREAD = [
+	REACHED_EXIT
+]
+SCHED = [
+	SWITCH_FROM
+	SWITCH_TO
+]
