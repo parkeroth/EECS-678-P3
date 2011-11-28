@@ -954,7 +954,7 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
 //          that you have chosen to release.
 //          It uses the Enhanced Second Chance algorithm
 // -----------------------------------------------------------------------
-int AddrSpace::SC_Choose_Victim (int notMe) {
+/*int AddrSpace::SC_Choose_Victim (int notMe) {
   unsigned int victim;                          //SC's chosen victim page
   unsigned int victimTime = OxFFFFFFFF;         //current victim's time info
 
@@ -984,5 +984,73 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
     }
   
   return returned_chosen;
+}*/
+
+int AddrSpace::SC_Choose_Victim (int notMe) {
+    bool victim_chosen = false,     //has victim been chosen?
+         found_00 = false,          //!used && !dirty
+         found_01 = false;          //!used && dirty
+    int victim;
+    unsigned int victimTime = 0xFFFFFFFF;
+
+    for(unsigned int i=0; i<getNumPages();i++)
+    {
+      // same as before, proceed only if we have a valid page
+      // and it's not our excluded page
+      if( pageTable[i].valid && 
+	        (pageTable[i].physicalPage != (unsigned int)notMe) )
+	    {
+            //valid page, now check our reference bits
+            //CASE 1 [0,0]: not used, not modified, bigger time 
+            if( !pageTable[i].used && !pageTable[i].dirty
+                    && (victimTime > pageTable[i].getTime()) )
+            {
+                victim = pageTable[i].physicalPage;
+                victimTime = pageTable[i].getTime();
+                found_00 = true;
+            }
+            //CASE 2 [0,1]: not used, modified, bigger time
+            else if( !pageTable[i].used && pageTable[i].dirty
+                    && (victimTime > pageTable[i].getTime()) )
+            {
+                victim = pageTable[i].physicalPage;
+                victimTime = pageTable[i].getTime();
+                found_01 = true;
+            }
+        }
+    }
+
+    //if either of these two desirable cases were found, 
+    //return that victim
+    if( found_00 || found_01 )
+        return victim;
+    
+    //otherwise, we'll start looking at recently used pages
+    //no real need for an else; function would exit
+    //if above were true
+    for(unsigned int i=0; i<getNumPages();i++)
+    {
+      // same as before, proceed only if we have a valid page
+      // and it's not our excluded page
+      if( pageTable[i].valid && 
+	        (pageTable[i].physicalPage != (unsigned int)notMe) )
+	    {
+            //CASE 3 [1,0]: recently used, not modified, bigger time
+            if( pageTable[i].used && !pageTable[i].dirty
+                    && (victimTime > pageTable[i].getTime()) )
+            {
+                victim = pageTable[i].physicalPage;
+                victimTime = pageTable[i].getTime();
+            }
+            //CASE 4 [1,1]: recently used, recently modified, bigger time
+            if( pageTable[i].used && pageTable[i].dirty
+                    && (victimTime > pageTable[i].getTime()) )
+            {
+                victim = pageTable[i].physicalPage;
+                victimTime = pageTable[i].getTime();
+            }
+        }
+    }
+    return victim;
 }
 
