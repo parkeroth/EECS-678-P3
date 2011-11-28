@@ -278,6 +278,7 @@ void TranslationEntry::clearSC () {
 // NOTE: This function is used throughout the memory management code
 // -----------------------------------------------------------------------
 void TranslationEntry::clearRefHistory () {
+    history = 0x00; // 678 Clear history field
 }
 
 
@@ -288,6 +289,7 @@ void TranslationEntry::clearRefHistory () {
 // NOTE: This function is used throughout the memory management code
 // -----------------------------------------------------------------------
 void TranslationEntry::setTime (unsigned int theTime) {
+    load_time = theTime; // 678
 }
 
 
@@ -299,6 +301,6 @@ void TranslationEntry::setTime (unsigned int theTime) {
 // -----------------------------------------------------------------------
 unsigned int TranslationEntry::getTime () {
     // return the access time here
-    return 0;
+    return load_time; // 678
 }
 
