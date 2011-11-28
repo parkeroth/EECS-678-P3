@@ -244,7 +244,8 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 	return BusErrorException;
     }
     entry->use = true;		// set the use, dirty bits
-
+    
+    entry->history = 0x80; // 678 initial value of history to delta value
 
     if (writing)
 	entry->dirty = true;
