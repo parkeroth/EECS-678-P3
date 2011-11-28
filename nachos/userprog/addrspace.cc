@@ -987,8 +987,7 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
 }*/
 
 int AddrSpace::SC_Choose_Victim (int notMe) {
-    bool victim_chosen = false,     //has victim been chosen?
-         found_00 = false,          //!used && !dirty
+    bool found_00 = false,          //!used && !dirty
          found_01 = false;          //!used && dirty
     int victim;
     unsigned int victimTime = 0xFFFFFFFF;
