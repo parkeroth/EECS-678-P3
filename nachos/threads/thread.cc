@@ -177,14 +177,73 @@ void Thread::refreshWss()
 
     // 1) determine how many pages were referenced in the recent history
 
-    if ( wssContractionEnabled )
-      { // --> the "cwss" command line parameter was specified, so the
-	// --> contract step is enabled
+    int page_ref = 0;   // 678
+    unsigned char mask; // 678
+    
+    // 678 Set mask based on the value of Delta Size
+    if(wsDeltaSize == 1)
+    {
+        mask = 0x80;
+    }
+    else if(wsDeltaSize == 2)
+    {
+        mask = 0xC0;
+    }
+    else if(wsDeltaSize == 4)
+    {
+        mask = 0xF0;
+    }
+    else if(wsDeltaSize == 8)
+    {
+        mask = 0xFF;
+    }
+    
+    // 678 Count number of pages currently being referenced
+    for(unsigned int count=0; count < space->getNumPages(); count++)
+    {
+        if(0x00 != space->get_page_ptr(count)->history & mask)
+        {
+            page_ref++;
+        }
+    }
 
-	// 2) if the process owns too many pages, take them away; the "contract" step
-      }
+    // 678 Determine WS size and set
+    if(page_ref < 4)
+    {
+        currentThread->space->setWorkingSetSize(4);
+    }
+    else if(page_ref > 32)
+    {
+        currentThread->space->setWorkingSetSize(32);
+    }
+    else
+    {
+        currentThread->space->setWorkingSetSize(page_ref);
+    }
+
+    if ( wssContractionEnabled )
+    {   // --> the "cwss" command line parameter was specified, so the
+	    // --> contract step is enabled
+
+	    // 2) if the process owns too many pages, take them away; the "contract" step
+        // 678
+        
+        int victim_page_num = 0;
+        while(space->TooManyFrames())
+        {
+            victim_page_num = memory->Choose_Victim(-1);    // Get victim
+            memory->pageout(victim_page_num);               // Page out victim
+        }
+    }
 
     // 3) slide the history window
+    // 678
+    
+    for(unsigned int page=0; page < space->getNumPages(); page++)
+    {
+        tmp_history = space->get_page_ptr(page)->history >> 1;
+        space->get_page_ptr(page)->history = tmp_history;
+    }
 }
 
 
