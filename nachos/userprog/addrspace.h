@@ -71,6 +71,10 @@ public:
   int SC_Choose_Victim (int notMe);
   int TooManyFrames(void);
 
+  int setWorkingSetSize(int size);
+  void getWorkingSetSize(void);
+  int getNumPages(void);
+
 
 private:
 

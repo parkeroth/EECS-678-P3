@@ -841,11 +841,11 @@ int AddrSpace::FIFO_Choose_Victim (int notMe) {
     // Check to make sure the current page is a valid one
     // and also not the page we said it could not be
     // otherwise it doesn't matter here
-    if(pageTable[i].valid == true && 
+    if(pageTable[i].valid && 
 	    (pageTable[i].physicalPage != (unsigned int) notMe))
 	    {
             //for first page we check
-	        if(i == 0)
+	        if(!i)
 	        {
                 //basicially automatically assign the current page to be
                 //victim page, which if more pages exist may chage later
@@ -888,7 +888,7 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
   {
     // again, make sure the ith page is valid and not the
     // page it cannot be
-    if(pageTable[i].valid == true && 
+    if(pageTable[i].valid && 
 	    (pageTable[i].physicalPage != (unsigned int) notMe))
     {
 	    // SPECIAL CASE testing
@@ -929,50 +929,32 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
 //          It uses the Enhanced Second Chance algorithm
 // -----------------------------------------------------------------------
 int AddrSpace::SC_Choose_Victim (int notMe) {
-  //unsigned int returned_chosen, chosen1, chosen2, t1=0xFFFFFFFF, t2=0xFFFFFFFF;
-  //bool c1=0, c2=0;
-  unsigned int victim;                  //SC's chosen victim page
-  unsigned int victimTime=OxFFFFFFFF;   //current victim's time info
+  unsigned int victim;                          //SC's chosen victim page
+  unsigned int victimTime = OxFFFFFFFF;         //current victim's time info
+
+    //Loop over available pages
+    //
+    //  Main things to check here:
+    //      pageTable[i].use:   page was recently used
+    //      pageTable[i].dirty: page was recently modified
     for(unsigned int i=0; i<getNumPages();i++)
     {
-      if( pageTable[i].valid == true && 
-	  (pageTable[i].physicalPage != (unsigned int)notMe) )
-	{
-	  if(pageTable[i].use == false && pageTable[i].dirty == false)
+      // same as before, proceed only if we have a valid page
+      // and it's not our excluded page
+      if( pageTable[i].valid && 
+	    (pageTable[i].physicalPage != (unsigned int)notMe) )
 	    {
-	      if(c1 == 0)
-		c1 = 1;		  
-	      if(pageTable[i].getTime() < t1)
-		{
-		  chosen1 = pageTable[i].physicalPage;
-		  t1 = pageTable[i].getTime();
-		}
+            //Page was recently used
+            if(pageTable[i].use)
+            {
+                pageTable[i].clearSC();
+            } else {
+                if(pageTable[i].dirty)
+                {
+                    
+                }
+            }
 	    }
-	  if(pageTable[i].use == false && pageTable[i].dirty == true)
-	    {
-	      if(c2 == 0)
-		c2 = 1;
-	      if(pageTable[i].getTime() < t2)
-		{
-		  chosen2 = pageTable[i].physicalPage;
-		  t2 = pageTable[i].getTime();
-		}
-	    }
-	  if(pageTable[i].use == true && pageTable[i].dirty == false)
-	    pageTable[i].clearSC();	      
-	  if(pageTable[i].use == 1 && pageTable[i].dirty == 1)
-	    pageTable[i].clearSC();      
-	  
-	}
-    }
-  
-  if(c2 == 1)
-    {
-      returned_chosen = chosen2;
-    }
-  if(c1 == 1)
-    {
-      returned_chosen = chosen1;
     }
   
   return returned_chosen;

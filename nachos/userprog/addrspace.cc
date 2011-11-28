@@ -787,6 +787,32 @@ AddrSpace::Setup_Load(OpenFile *executable, NachosHeader *nachosH)
   return 0;
 }
 
+// -----------------------------------------------------------------------
+// setWorkingSetSize
+// Purpose: Sets the limit on the page working set size
+// -----------------------------------------------------------------------
+void AddrSpace::setWorkingSetSize(int size)
+{
+    wSetSize = size;
+}
+
+// -----------------------------------------------------------------------
+// getWorkingSetSize
+// Purpose: gets the current working set size
+// -----------------------------------------------------------------------
+int AddrSpace::getWorkingSetSize(void)
+{
+    return wSetSize;
+}
+
+// -----------------------------------------------------------------------
+// getNumPages
+// Purpose: gets the number of virtual pages in the address space
+// -----------------------------------------------------------------------
+unsigned int AddrSpace::getNumPages(void)
+{
+    return numPages;
+}
 
 // -----------------------------------------------------------------------
 // NumPhysPagesOwned
