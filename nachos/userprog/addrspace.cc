@@ -832,31 +832,41 @@ int AddrSpace::TooManyFrames () {
 //          It uses the First-In First-Out algorithm
 // -----------------------------------------------------------------------
 int AddrSpace::FIFO_Choose_Victim (int notMe) {
-  int victim;                   //FIFO's chosen victim thread
-  unsigned int pageTime = 0xFFFFFFFF;
+  // all 678
+  int victim;                           //FIFO's chosen victim thread
+  unsigned int pageTime = 0xFFFFFFFF;   //set this to some temporary (max)
+                                        //value so the first page test passes
   for(int i=0; i<getNumPages();i++)
     {
+      // Check to make sure the current page is a valid one
+      // otherwise it doesn't matter here
       if(pageTable[i].valid == true)
-	{
-	  if((i == 0) && (pageTable[i].physicalPage != (unsigned int)notMe))
 	    {
-	      pageTime = pageTable[i].getTime();
-	      victim = pageTable[i].physicalPage;
+            //for first page we check
+	        if((i == 0) && ((int)pageTable[i].physicalPage != notMe))
+	        {
+                //basicially automatically assign the current page to be
+                //victim page, which if more pages exist may chage later
+	            pageTime = pageTable[i].getTime();
+	            victim = pageTable[i].physicalPage;
+	        }
+            //for any additional pages
+	        if( i > 0 )
+	        {
+                //if this page was accessed at a time less then current
+                //victim, then this page is before it in the fifo queue
+                //and it becomes the victim to check against
+	            if((pageTable[i].getTime() < pageTime) &&
+		            ((int)pageTable[i].physicalPage != notMe))
+		        {
+		            pageTime = pageTable[i].getTime();
+		            victim = pageTable[i].physicalPage;
+		        } 
+	        }
 	    }
-	  if( i > 0 )
-	    {
-	      if( (pageTable[i].getTime() < pageTime) &&
-		  (pageTable[i].physicalPage != (unsigned int)notMe))
-		{
-		  victim = pageTable[i].physicalPage;
-		  pageTime = pageTable[i].getTime();
-		} 
-	    }
-	}
     } 
   return victim;
 }
-
 
 // -----------------------------------------------------------------------
 // LRU_Choose_Victim
