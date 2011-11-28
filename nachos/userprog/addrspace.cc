@@ -930,10 +930,17 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
 // -----------------------------------------------------------------------
 int AddrSpace::SC_Choose_Victim (int notMe) {
   unsigned int victim;                          //SC's chosen victim page
-  unsigned int victimTime = OxFFFFFFFF;    //current victim's time info
-  bool hitNonDirtyPage = 0;
+  unsigned int victimTime = OxFFFFFFFF;         //current victim's time info
+
+    //Loop over available pages
+    //
+    //  Main things to check here:
+    //      pageTable[i].use:   page was recently used
+    //      pageTable[i].dirty: page was recently modified
     for(unsigned int i=0; i<getNumPages();i++)
     {
+      // same as before, proceed only if we have a valid page
+      // and it's not our excluded page
       if( pageTable[i].valid && 
 	    (pageTable[i].physicalPage != (unsigned int)notMe) )
 	    {
