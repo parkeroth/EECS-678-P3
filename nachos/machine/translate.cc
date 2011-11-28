@@ -244,7 +244,8 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 	return BusErrorException;
     }
     entry->use = true;		// set the use, dirty bits
-
+    
+    entry->history = 0x80; // 678 initial value of history to delta value
 
     if (writing)
 	entry->dirty = true;
@@ -277,6 +278,7 @@ void TranslationEntry::clearSC () {
 // NOTE: This function is used throughout the memory management code
 // -----------------------------------------------------------------------
 void TranslationEntry::clearRefHistory () {
+    history = 0x00; // 678 Clear history field
 }
 
 
@@ -287,6 +289,7 @@ void TranslationEntry::clearRefHistory () {
 // NOTE: This function is used throughout the memory management code
 // -----------------------------------------------------------------------
 void TranslationEntry::setTime (unsigned int theTime) {
+    load_time = theTime; // 678
 }
 
 
@@ -298,6 +301,6 @@ void TranslationEntry::setTime (unsigned int theTime) {
 // -----------------------------------------------------------------------
 unsigned int TranslationEntry::getTime () {
     // return the access time here
-    return 0;
+    return load_time; // 678
 }
 
