@@ -73,6 +73,10 @@ public:
 
 
 private:
+
+  int wSetSize;                       // Holds the size of the current
+                                      // instance's working set
+
   void CopyPageTable (TranslationEntry *oldPT, TranslationEntry *newPT, 
 		      int numpages);
   int SetupTable(void);

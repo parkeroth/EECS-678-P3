@@ -812,8 +812,13 @@ unsigned int AddrSpace::NumPhysPagesOwned () {
 //          working set allows.  Returns 1 if it does.
 // -----------------------------------------------------------------------
 int AddrSpace::TooManyFrames () {
-  // return the appropriate value here
-  return 0;
+  //function all 678
+  //use if statement to check if return value of NumPhysPagesOwned
+  //is greater than the instance's given working set size
+  if ( (int)NumPhysPagesOwned > wSetSize ) 
+      return 1;     //TRUE
+  else
+      return 0;     //FALSE
 }
 
 
@@ -827,8 +832,29 @@ int AddrSpace::TooManyFrames () {
 //          It uses the First-In First-Out algorithm
 // -----------------------------------------------------------------------
 int AddrSpace::FIFO_Choose_Victim (int notMe) {
-  // You need to return an appropriate value here.
-  return 0;
+  int victim;                   //FIFO's chosen victim thread
+  unsigned int pageTime = 0xFFFFFFFF;
+  for(int i=0; i<getNumPages();i++)
+    {
+      if(pageTable[i].valid == true)
+	{
+	  if((i == 0) && (pageTable[i].physicalPage != (unsigned int)notMe))
+	    {
+	      pageTime = pageTable[i].getTime();
+	      victim = pageTable[i].physicalPage;
+	    }
+	  if( i > 0 )
+	    {
+	      if( (pageTable[i].getTime() < pageTime) &&
+		  (pageTable[i].physicalPage != (unsigned int)notMe))
+		{
+		  victim = pageTable[i].physicalPage;
+		  pageTime = pageTable[i].getTime();
+		} 
+	    }
+	}
+    } 
+  return victim;
 }
 
 
