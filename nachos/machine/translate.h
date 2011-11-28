@@ -32,6 +32,8 @@
 
 class TranslationEntry {
   public:
+    unsigned char history;       // One byte for history bits
+    unsigned int load_time;      // Time stamp counter
 
     unsigned int virtualPage;  	// The page number in virtual memory.
     unsigned int physicalPage;  // The page number in real memory (relative
