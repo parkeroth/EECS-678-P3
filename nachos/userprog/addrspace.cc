@@ -987,10 +987,14 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
 }*/
 
 int AddrSpace::SC_Choose_Victim (int notMe) {
-    bool found_00 = false,          //!used && !dirty
-         found_01 = false;          //!used && dirty
-    int victim;
-    unsigned int victimTime = 0xFFFFFFFF;
+    int choice[4], time[4];
+    bool found_00, found_01;
+
+    for(int i=0; i<4; i++)
+    {
+        choice[i] = -1;
+        time[i] = 0xFFFFFFFF;
+    }
 
     for(int i=0; i<getNumPages();i++)
     {
@@ -1001,56 +1005,39 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
 	    {
             //valid page, now check our reference bits
             //CASE 1 [0,0]: not used, not modified, bigger time 
-            if( !pageTable[i].use && !pageTable[i].dirty
-                    && (victimTime > pageTable[i].getTime()) )
+            if( !pageTable[i].use && !pageTable[i].dirty && 
+                (pageTable[i].getTime() < time[0]) )
             {
-                victim = pageTable[i].physicalPage;
-                victimTime = pageTable[i].getTime();
-                found_00 = true;
+                choice[0] = pageTable[i].physicalPage;
+                time[0] = pageTable[i].getTime();
             }
             //CASE 2 [0,1]: not used, modified, bigger time
-            else if( !pageTable[i].use && pageTable[i].dirty
-                    && (victimTime > pageTable[i].getTime()) )
+            else if( !pageTable[i].use && pageTable[i].dirty &&
+                     (pageTable[i].getTime() < time[1]) )
             {
-                victim = pageTable[i].physicalPage;
-                victimTime = pageTable[i].getTime();
-                found_01 = true;
+                choice[1] = pageTable[i].physicalPage;
+                time[1] = pageTable[i].getTime();
+            }
+            else if( pageTable[i].dirty && 
+                     (pageTable[i].getTime() < time[2]) )
+            {
+                choice[2] = pageTable[i].physicalPage;
+                time[2] = pageTable[i].getTime();
+            }
+            else if(pageTable[i].getTime() < time[3])
+            {
+                choice[3] = pageTable[i].physicalPage;
+                time[3] = pageTable[i].getTime();
             }
         }
     }
 
-    //if either of these two desirable cases were found, 
-    //return that victim
-    if( found_00 || found_01 )
-        return victim;
-    
-    //otherwise, we'll start looking at recently used pages
-    //no real need for an else; function would exit
-    //if above were true
-    for(int i=0; i<getNumPages();i++)
+    for(int i=0; i<4; i++)
     {
-      // same as before, proceed only if we have a valid page
-      // and it's not our excluded page
-      if( pageTable[i].valid && 
-	        (pageTable[i].physicalPage != (unsigned int)notMe) )
-	    {
-            //valid page, now check our reference bits
-            //CASE 3 [1,0]: recently used, not modified, bigger time
-            if( pageTable[i].use && !pageTable[i].dirty
-                    && (victimTime > pageTable[i].getTime()) )
-            {
-                victim = pageTable[i].physicalPage;
-                victimTime = pageTable[i].getTime();
-            }
-            //CASE 4 [1,1]: recently used, recently modified, bigger time
-            else if( pageTable[i].use && pageTable[i].dirty
-                    && (victimTime > pageTable[i].getTime()) )
-            {
-                victim = pageTable[i].physicalPage;
-                victimTime = pageTable[i].getTime();
-            }
-        }
+        if(choice[i] >= 0)
+            return choice[i];
     }
-    return victim;
-}
+
+    return -1;
+ }
 

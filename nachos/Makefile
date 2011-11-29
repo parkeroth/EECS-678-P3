@@ -5,7 +5,7 @@
 MAKE = make
 LPR = lpr
 
-.PHONY:	all clean print quick refreshDepend
+.PHONY:	all clean print quick refreshDepend p3-table
 
 all: refreshDepend quick
 
@@ -23,6 +23,8 @@ refreshDepend:
 	$(MAKE) -C dsui-vm
 	$(MAKE) -C userprog depend 
 
+p3-table: clean all
+	cd dsui-vm/page_replacement_policy; make clean; make regress; make postprocess; make table
 
 
 
