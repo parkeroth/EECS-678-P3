@@ -809,9 +809,9 @@ int AddrSpace::getWorkingSetSize(void)
 // getNumPages
 // Purpose: gets the number of virtual pages in the address space
 // -----------------------------------------------------------------------
-unsigned int AddrSpace::getNumPages(void)
+int AddrSpace::getNumPages(void)
 {
-    return numPages;
+return numPages;
 }
 
 // -----------------------------------------------------------------------
@@ -841,7 +841,7 @@ int AddrSpace::TooManyFrames () {
   //function all 678
   //use if statement to check if return value of NumPhysPagesOwned
   //is greater than the instance's given working set size
-  if ( (int)NumPhysPagesOwned > wSetSize ) 
+  if ( (int)NumPhysPagesOwned() > wSetSize ) 
       return 1;     //TRUE
   else
       return 0;     //FALSE
@@ -910,7 +910,7 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
   unsigned int victimTime = 0xFFFFFFFF; //current victim's time info
   
   //Loop over each page
-  for(unsigned int i=0; i<getNumPages();i++)
+  for(int i=0; i<getNumPages();i++)
   {
     // again, make sure the ith page is valid and not the
     // page it cannot be
@@ -992,7 +992,7 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
     int victim;
     unsigned int victimTime = 0xFFFFFFFF;
 
-    for(unsigned int i=0; i<getNumPages();i++)
+    for(int i=0; i<getNumPages();i++)
     {
       // same as before, proceed only if we have a valid page
       // and it's not our excluded page
@@ -1001,7 +1001,7 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
 	    {
             //valid page, now check our reference bits
             //CASE 1 [0,0]: not used, not modified, bigger time 
-            if( !pageTable[i].used && !pageTable[i].dirty
+            if( !pageTable[i].use && !pageTable[i].dirty
                     && (victimTime > pageTable[i].getTime()) )
             {
                 victim = pageTable[i].physicalPage;
@@ -1009,7 +1009,7 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
                 found_00 = true;
             }
             //CASE 2 [0,1]: not used, modified, bigger time
-            else if( !pageTable[i].used && pageTable[i].dirty
+            else if( !pageTable[i].use && pageTable[i].dirty
                     && (victimTime > pageTable[i].getTime()) )
             {
                 victim = pageTable[i].physicalPage;
@@ -1027,7 +1027,7 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
     //otherwise, we'll start looking at recently used pages
     //no real need for an else; function would exit
     //if above were true
-    for(unsigned int i=0; i<getNumPages();i++)
+    for(int i=0; i<getNumPages();i++)
     {
       // same as before, proceed only if we have a valid page
       // and it's not our excluded page
@@ -1036,14 +1036,14 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
 	    {
             //valid page, now check our reference bits
             //CASE 3 [1,0]: recently used, not modified, bigger time
-            if( pageTable[i].used && !pageTable[i].dirty
+            if( pageTable[i].use && !pageTable[i].dirty
                     && (victimTime > pageTable[i].getTime()) )
             {
                 victim = pageTable[i].physicalPage;
                 victimTime = pageTable[i].getTime();
             }
             //CASE 4 [1,1]: recently used, recently modified, bigger time
-            else if( pageTable[i].used && pageTable[i].dirty
+            else if( pageTable[i].use && pageTable[i].dirty
                     && (victimTime > pageTable[i].getTime()) )
             {
                 victim = pageTable[i].physicalPage;
