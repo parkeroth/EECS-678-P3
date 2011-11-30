@@ -5,448 +5,448 @@ filters = {
 
     f0 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_1.bin"
         )
         prpfilters.prp()
     ]
 
     f1 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_2.bin"
         )
         prpfilters.prp()
     ]
 
     f2 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_4.bin"
         )
         prpfilters.prp()
     ]
 
     f3 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_dumb_8.bin"
         )
         prpfilters.prp()
     ]
 
     f4 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_1.bin"
         )
         prpfilters.prp()
     ]
 
     f5 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_2.bin"
         )
         prpfilters.prp()
     ]
 
     f6 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_4.bin"
         )
         prpfilters.prp()
     ]
 
     f7 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_fifo_8.bin"
         )
         prpfilters.prp()
     ]
 
     f8 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_1.bin"
         )
         prpfilters.prp()
     ]
 
     f9 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_2.bin"
         )
         prpfilters.prp()
     ]
 
     f10 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_4.bin"
         )
         prpfilters.prp()
     ]
 
     f11 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_lru_8.bin"
         )
         prpfilters.prp()
     ]
 
     f12 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_1.bin"
         )
         prpfilters.prp()
     ]
 
     f13 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_2.bin"
         )
         prpfilters.prp()
     ]
 
     f14 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_4.bin"
         )
         prpfilters.prp()
     ]
 
     f15 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access1_secondchance_8.bin"
         )
         prpfilters.prp()
     ]
 
     f16 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_1.bin"
         )
         prpfilters.prp()
     ]
 
     f17 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_2.bin"
         )
         prpfilters.prp()
     ]
 
     f18 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_4.bin"
         )
         prpfilters.prp()
     ]
 
     f19 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_dumb_8.bin"
         )
         prpfilters.prp()
     ]
 
     f20 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_1.bin"
         )
         prpfilters.prp()
     ]
 
     f21 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_2.bin"
         )
         prpfilters.prp()
     ]
 
     f22 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_4.bin"
         )
         prpfilters.prp()
     ]
 
     f23 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_fifo_8.bin"
         )
         prpfilters.prp()
     ]
 
     f24 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_1.bin"
         )
         prpfilters.prp()
     ]
 
     f25 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_2.bin"
         )
         prpfilters.prp()
     ]
 
     f26 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_4.bin"
         )
         prpfilters.prp()
     ]
 
     f27 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_lru_8.bin"
         )
         prpfilters.prp()
     ]
 
     f28 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_1.bin"
         )
         prpfilters.prp()
     ]
 
     f29 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_2.bin"
         )
         prpfilters.prp()
     ]
 
     f30 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_4.bin"
         )
         prpfilters.prp()
     ]
 
     f31 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access2_secondchance_8.bin"
         )
         prpfilters.prp()
     ]
 
     f32 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_1.bin"
         )
         prpfilters.prp()
     ]
 
     f33 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_2.bin"
         )
         prpfilters.prp()
     ]
 
     f34 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_4.bin"
         )
         prpfilters.prp()
     ]
 
     f35 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_dumb_8.bin"
         )
         prpfilters.prp()
     ]
 
     f36 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_1.bin"
         )
         prpfilters.prp()
     ]
 
     f37 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_2.bin"
         )
         prpfilters.prp()
     ]
 
     f38 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_4.bin"
         )
         prpfilters.prp()
     ]
 
     f39 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_fifo_8.bin"
         )
         prpfilters.prp()
     ]
 
     f40 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_1.bin"
         )
         prpfilters.prp()
     ]
 
     f41 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_2.bin"
         )
         prpfilters.prp()
     ]
 
     f42 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_4.bin"
         )
         prpfilters.prp()
     ]
 
     f43 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_lru_8.bin"
         )
         prpfilters.prp()
     ]
 
     f44 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_1.bin"
         )
         prpfilters.prp()
     ]
 
     f45 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_2.bin"
         )
         prpfilters.prp()
     ]
 
     f46 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_4.bin"
         )
         prpfilters.prp()
     ]
 
     f47 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access3_secondchance_8.bin"
         )
         prpfilters.prp()
     ]
 
     f48 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_1.bin"
         )
         prpfilters.prp()
     ]
 
     f49 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_2.bin"
         )
         prpfilters.prp()
     ]
 
     f50 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_4.bin"
         )
         prpfilters.prp()
     ]
 
     f51 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_dumb_8.bin"
         )
         prpfilters.prp()
     ]
 
     f52 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_1.bin"
         )
         prpfilters.prp()
     ]
 
     f53 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_2.bin"
         )
         prpfilters.prp()
     ]
 
     f54 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_4.bin"
         )
         prpfilters.prp()
     ]
 
     f55 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_fifo_8.bin"
         )
         prpfilters.prp()
     ]
 
     f56 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_1.bin"
         )
         prpfilters.prp()
     ]
 
     f57 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_2.bin"
         )
         prpfilters.prp()
     ]
 
     f58 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_4.bin"
         )
         prpfilters.prp()
     ]
 
     f59 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_lru_8.bin"
         )
         prpfilters.prp()
     ]
 
     f60 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_1.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_1.bin"
         )
         prpfilters.prp()
     ]
 
     f61 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_2.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_2.bin"
         )
         prpfilters.prp()
     ]
 
     f62 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_4.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_4.bin"
         )
         prpfilters.prp()
     ]
 
     f63 = [
         head.input (
-            file = "/users/096/p/proth/Documents/EECS678/p-3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_8.bin"
+            file = "/users/089/n/ndisidor/EECS678/P3/EECS-678-P3/nachos/dsui-vm/page_replacement_policy/bins/access4_secondchance_8.bin"
         )
         prpfilters.prp()
     ]

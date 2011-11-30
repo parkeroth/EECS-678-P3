@@ -1018,18 +1018,23 @@ int AddrSpace::SC_Choose_Victim (int notMe) {
                 choice[1] = pageTable[i].physicalPage;
                 time[1] = pageTable[i].getTime();
             }
-            else if( !pageTable[i].dirty && 
+            else
+            {
+                pageTable[i].clearSC();
+
+                //CASE 3 [1,0]: used, not modified, bigger time
+                if( !pageTable[i].dirty && 
                      (pageTable[i].getTime() < time[2]) )
-            {
-                choice[2] = pageTable[i].physicalPage;
-                time[2] = pageTable[i].getTime();
-                pageTable[i].clearSC();
-            }
-            else if( pageTable[i].getTime() < time[3] )
-            {
-                choice[3] = pageTable[i].physicalPage;
-                time[3] = pageTable[i].getTime();
-                pageTable[i].clearSC();
+                {
+                    choice[2] = pageTable[i].physicalPage;
+                    time[2] = pageTable[i].getTime();
+                }
+                //CASE 4 [1,1]: used, modified, bigger time
+                else if( pageTable[i].getTime() < time[3] )
+                {
+                    choice[3] = pageTable[i].physicalPage;
+                    time[3] = pageTable[i].getTime();
+                }
             }
         }
     }
