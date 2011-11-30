@@ -986,7 +986,7 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
   return returned_chosen;
 }*/
 
-/*int AddrSpace::SC_Choose_Victim (int notMe) {
+int AddrSpace::SC_Choose_Victim (int notMe) {
     int choice[4], time[4];
     bool found_00, found_01;
 
@@ -1018,16 +1018,18 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
                 choice[1] = pageTable[i].physicalPage;
                 time[1] = pageTable[i].getTime();
             }
-            else if( pageTable[i].dirty && 
+            else if( !pageTable[i].dirty && 
                      (pageTable[i].getTime() < time[2]) )
             {
                 choice[2] = pageTable[i].physicalPage;
                 time[2] = pageTable[i].getTime();
+                pageTable[i].clearSC();
             }
-            else if(pageTable[i].getTime() < time[3])
+            else if( pageTable[i].getTime() < time[3] )
             {
                 choice[3] = pageTable[i].physicalPage;
                 time[3] = pageTable[i].getTime();
+                pageTable[i].clearSC();
             }
         }
     }
@@ -1039,58 +1041,5 @@ int AddrSpace::LRU_Choose_Victim (int notMe) {
     }
 
     return -1;
- }*/
+ }
 
-
-int AddrSpace::SC_Choose_Victim (int notMe) {
-    int victim;             //SC's chosen victim page
-    int firstChoice,        //first choice page
-        secondChoice;       //second choice page
-    unsigned int fcTime=0xFFFFFFFF,
-                 scTime=0xFFFFFFFF;
-    bool found_00=false,    //found !used && !dirty
-         found_01=false;    //found !used && dirty
-    for(int i=0; i<getNumPages();i++)
-    {
-      // same as before, proceed only if we have a valid page
-      // and it's not our excluded page
-      if( pageTable[i].valid && 
-	        (pageTable[i].physicalPage != (unsigned int)notMe) )
-	    {
-            if(!pageTable[i].use)
-            {
-                //CASE 1 [0,0]: not used && not dirty
-                if( !pageTable[i].dirty && 
-                    (fcTime > pageTable[i].getTime()) )
-                {
-                    if(!found_00)
-                        found_00 = true;
-                    firstChoice = pageTable[i].physicalPage;
-                    fcTime = pageTable[i].getTime();
-                }
-                //CASE 2 [0,1]: not used && recently modified
-                else if( pageTable[i].dirty &&
-                        (scTime > pageTable[i].getTime()) )
-                {
-                    if(!found_01)
-                        found_01 = true;
-                    secondChoice = pageTable[i].physicalPage;
-                    scTime = pageTable[i].getTime();
-                }
-            } else {
-                //Clear the SC info
-                pageTable[i].clearSC();
-            }
-        }
-    }
-
-    //found best case victim.  return
-    if(found_00)
-        return firstChoice;
-    //found second tier victim && no first tier
-    if(found_01)
-        return secondChoice;
-
-    //error. return impossible page.
-    return -1;
-}
