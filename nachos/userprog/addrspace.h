@@ -47,6 +47,7 @@ public:
   const Thread *owner;
 
   AddrSpace (Thread *t) :
+    wSetSize(4),
     owner(t),
     pageTable(NULL), numPages(0), execFile(NULL) {}
   ~AddrSpace();			// Deallocate an address space

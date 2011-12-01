@@ -364,8 +364,6 @@ int AddrSpace::InitSpace(OpenFile *executable)
   int retval;
   uint32_t max_address = 0U, section_size = 0U;
 
-  wSetSize = 4;     //678 initialize working set size to min value
-
   // Get the file and section headers, and retrieve the start address
   startAddress = ReadHeaders (executable, &nachosH);
 
@@ -408,8 +406,6 @@ int AddrSpace::InitSpace(OpenFile *executable)
 int
 AddrSpace::InitSpace(int numpages)
 {
-  wSetSize = 4;
-
   numPages = numpages;
   return SetupTable();
 }
